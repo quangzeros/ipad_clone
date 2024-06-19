@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  font-size: 62.5%;
+  /* font-weight: 100;
+    font-style: normal; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 20rem; */
+  background-color: #fafafc;
+}
+
+header .navigation__logo {
+  line-height: 1.4rem;
+  font-size: 1.4rem;
+  margin-right: 30px;
+  /* display: flex;
+  align-self: center; */
+}
+
+header .navigation__tag {
+  line-height: 1.4rem;
+  font-size: 1.4rem;
+  margin-right: 30px;
+  /* display: flex;
+  align-self: center; */
+}
+
+header a:nth-last-child(1) {
+  margin: 0;
+}
+
+.gototop {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* display: none; */
+  /* display: none; */
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  /* z-index: -1; */
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.gototop i {
+  font-size: 30px;
+  /* background-color: rgb(123, 179, 228); */
+  /* color: ; */
+  border-radius: 50%;
+  border: 1px rgb(105, 105, 105) solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.show {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.hide {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
