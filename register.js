@@ -1,5 +1,11 @@
+const { createClient } = supabase;
+const supabaseUrl = "https://sllcsbprxdfptgviyhkf.supabase.co";
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsbGNzYnByeGRmcHRndml5aGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg5Nzg1MjYsImV4cCI6MjAzNDU1NDUyNn0.hx1uhsAG67Ja8cTfXLzGK43qgNoMEV6hDZNWzktDI70";
+const _supabase = createClient(supabaseUrl, supabaseKey);
+
 //Handle click REGISTER event
-document.querySelector(".register-btn").addEventListener("click", (e) => {
+document.querySelector(".register-btn").addEventListener("click", async (e) => {
   e.preventDefault();
   // check is INPUT valid ?
   const email = document.querySelector("#email").value;
@@ -47,19 +53,29 @@ document.querySelector(".register-btn").addEventListener("click", (e) => {
 
   //Gui request len server
 
-  //check Email is exists
-  // if (user == null) {
-  //   document.querySelector(".section__form.login .message-detail").innerHTML =
-  //     "Email hoặc password không chính xác!";
-  //   return;
-  // }
+  //   check Email is exists
 
-  const user = {
-    name: name,
-    email: email,
-  };
+  const { data } = await _supabase.from("users").select().eq("email", email);
 
-  localStorage.setItem("user", JSON.stringify(user));
+  if (data.length != 0) {
+    document.querySelector(
+      ".section__form.register .message-detail"
+    ).innerHTML = "Email này đã được sử dụng!";
+    return;
+  }
+
+  const { error } = await _supabase
+    .from("users")
+    .insert({ name: name, password: password, email: email });
+
+  if (error) {
+    document.querySelector(
+      ".section__form.register .message-detail"
+    ).innerHTML = "Server xảy ra lỗi vui lòng thử lại sau!";
+    return;
+  }
+
+  //   localStorage.setItem("user", JSON.stringify(user));
 
   window.location.href = "./login.html";
 });
