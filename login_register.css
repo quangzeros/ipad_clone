@@ -1,0 +1,155 @@
+.section__heading {
+  padding: 50px 270px;
+}
+
+.section__heading h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.section__form {
+  /* margin: 0 auto; */
+  /* display: block; */
+  /* position: relative; */
+  width: 480px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.section__form h2 {
+  font-size: 2.4rem;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  color: #494949;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  position: relative;
+  margin: 10px 0;
+}
+
+.form-group input::placeholder {
+  color: transparent;
+}
+
+.form-group input {
+  width: 480px;
+  height: 55px;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid #86868b;
+}
+
+.form-group input.invalid {
+  border: 1px solid #ec2626;
+}
+
+.form-group .form-label {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  font-size: 18px;
+  padding: 0 10px;
+  color: #acacac;
+  pointer-events: none;
+  transition: 0.15s all ease;
+}
+
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + .form-label {
+  transform: translate(5px, -26px);
+  background-color: white;
+  font-size: 18px;
+  color: #4f4747;
+}
+
+.form-group span.message {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.16667;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  color: #ec2626;
+  margin-top: 3px;
+  text-align: left;
+}
+
+.section__form .help {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.section__form .help span {
+  font-size: 1.4rem;
+  line-height: 1.16667;
+  font-weight: 500;
+  letter-spacing: 0.009em;
+  color: #494949;
+  margin-bottom: 10px;
+}
+
+.section__form .help span a {
+}
+.section__form a {
+  font-size: 1.4rem;
+  line-height: 1.16667;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  color: #06c;
+}
+
+.section__form a:hover {
+  text-decoration: underline;
+}
+
+.section__form .message-detail {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  color: #e32828;
+  text-align: left;
+}
+
+.section__form .btn {
+  font-size: 1.8rem;
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: 1px solid #d1d1d9;
+  color: #fff;
+  /* opacity: 0.7; */
+  background-color: #6fb555;
+  /* width: 200px; */
+  /* margin: 0 auto;
+ */
+  /* display: flex;
+  justify-content: center; */
+  /* text-align: center; */
+}
+
+.section__form .btn:hover {
+  cursor: pointer;
+  /* color: black; */
+  color: white;
+  /* font-size: 2rem; */
+  transform: scale(1.0161290323);
+  transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1);
+  /* text-align: center; */
+}
+.section__form .login-btn {
+  /* text-align: center; */
+}
+
+.section__form .register-btn {
+  background-color: #48cae4;
+}

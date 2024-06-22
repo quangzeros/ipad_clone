@@ -1,0 +1,171 @@
+.section__heading {
+  display: flex;
+  padding: 40px 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__heading h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  line-height: 1.0834933333;
+}
+
+.section__heading__help {
+  display: flex;
+}
+
+.section__heading__help img {
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+}
+
+.section__heading__help div span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.016em;
+  line-height: 1.4285914286;
+  display: block;
+}
+
+.section__heading__help div a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  line-height: 1.4285914286;
+  color: #0071e3;
+  text-decoration: underline;
+}
+
+.section__desc__ipads {
+  /* margin-top: 10px; */
+
+  margin: 0 120px 40px;
+}
+
+.section__desc__ipads h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  line-height: 1.1428571429;
+}
+
+.section__desc__ipads h1 span {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  line-height: 1.1428571429;
+  color: #6e6e73;
+}
+
+.section__discovery__ipads {
+  display: flex;
+  margin: 0 120px;
+  justify-content: space-between;
+  padding-bottom: 54px;
+  /* margin-bottom: 1100px; */
+  border-bottom: 1px solid #d2d2d7;
+  overflow-y: hidden;
+}
+.ipad__item {
+  width: 24%;
+}
+
+.ipad__item__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ipad__item__img img {
+  width: fit-content;
+}
+.ipad__item__type {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.ipad__item__type .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 3px;
+  filter: blur(0.5px);
+  outline: linear-gradient(
+    rgba(0, 0, 0, 0.48),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.02)
+  );
+  border: 0.1px solid #989999;
+}
+.ipad__item__new {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(182, 68, 0);
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+.ipad__item__name {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.ipad__item__desc {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 14px;
+  color: #1d1d1f;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.4705882353;
+}
+.ipad__item__price {
+  font-size: 1.8rem;
+  text-align: center;
+  display: block;
+  color: #1d1d1f;
+  margin-bottom: 41px;
+  letter-spacing: -0.022em;
+  line-height: 1.4705882353;
+  font-weight: 600;
+}
+.ipad__item__box {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ipad__item__detail {
+  font-size: 1.7rem;
+  margin-right: 32px;
+  background-color: #0077ed;
+  color: #fff;
+  font-weight: 400;
+  padding: 11px 21px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.ipad__item__buy {
+  font-size: 1.7rem;
+  background-color: #0077ed;
+  color: #fff;
+  font-weight: 400;
+  padding: 11px 21px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ipad__item__buy:hover {
+  text-decoration: underline;
+  transform: scale(1.0161290323);
+  transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
