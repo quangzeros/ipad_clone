@@ -36,4 +36,10 @@ function logout() {
 
 function selectedType(type) {
   localStorage.setItem("selectedType", type);
+  user = JSON.parse(localStorage.getItem("user"));
+  if (user == null) {
+    window.location.href = "./login.html";
+  } else {
+    window.location.href = "./buy.html";
+  }
 }
