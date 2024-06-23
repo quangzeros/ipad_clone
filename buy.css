@@ -65,8 +65,9 @@
   margin: 0 120px;
   justify-content: space-between;
   padding-bottom: 54px;
+  flex-wrap: wrap;
   /* margin-bottom: 1100px; */
-  border-bottom: 1px solid #d2d2d7;
+
   overflow-y: hidden;
 }
 .ipad__item {
@@ -81,6 +82,7 @@
 
 .ipad__item__img img {
   width: fit-content;
+  /* cursor: auto; */
 }
 .ipad__item__type {
   margin-top: 30px;
@@ -150,7 +152,7 @@
   outline: none;
   border: none;
   border-radius: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .ipad__item__buy {
   font-size: 1.7rem;
@@ -161,7 +163,7 @@
   outline: none;
   border: none;
   border-radius: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .ipad__item__buy:hover {

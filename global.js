@@ -17,7 +17,7 @@ btn_gototop.addEventListener("click", (e) => {
 // };
 
 // localStorage.setItem("user", JSON.stringify(user));
-const user = JSON.parse(localStorage.getItem("user"));
+let user = JSON.parse(localStorage.getItem("user"));
 const authenDOM = document.querySelector("header .authentication");
 if (user == null) {
   authenDOM.innerHTML = `          <a href="./register.html" class="navigation__tag">Đăng ký</a>
@@ -29,7 +29,11 @@ if (user == null) {
 //Click logout
 function logout() {
   // e.preventDefault();
-  console.log("CLICK");
+  // console.log("CLICK");
   localStorage.setItem("user", null);
   location.reload();
+}
+
+function selectedType(type) {
+  localStorage.setItem("selectedType", type);
 }
