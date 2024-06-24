@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iphone</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./iphone.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="navigation">
+          <a href="./index.html" class="navigation__logo"
+            ><svg
+              height="44"
+              viewBox="0 0 14 44"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"
+              ></path>
+            </svg>
+          </a>
+          <div class="dropdown">
+            <a href="./index.html" class="navigation__tag">Cửa hàng</a>
+          </div>
+          <div class="dropdown">
+            <a href="./mac.html" class="navigation__tag">Mac</a>
+              <div class="dropdown-content">
+                <div class="box">
+                    <span class="label">Khám phá Mac</span>
+                    <a href="./mac.html">Khám phá tất cả Mac</a>
+                    <a href="./macBook_pro.html">Khám phá tất cả MacBook Pro</a>
+                    <a href="./macBook_air.html">Khám phá tất cả MacBook Air</a>
+                    <a href="./imac.html">Khám phá tất cả iMac</a>
+                </div>
+                <div class="box">
+                  <span class="label">Mua Mac</span>
+                  <a href="./buy.html" onclick="selectedType('mac')" >Mua iPad</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./index.html" class="navigation__tag">iPad</a>
+              <div class="dropdown-content">
+                <div class="box">
+                    <span class="label">Khám phá iPad</span>
+                    <a href="./index.html">Khám phá tất cả iPad</a>
+                </div>
+                <div class="box">
+                  <span class="label">Mua iPad</span>
+                  <a href="./buy.html" onclick="selectedType('ipad')" >Mua iPad</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                  <a href="./iphone.html" class="navigation__tag">iPhone</a>
+              <div class="dropdown-content">
+                <div class="box">
+                    <span class="label">Khám phá iPhone</span>
+                    <a href="./iphone.html">Khám phá tất cả iPhone</a>
+                    <a href="./iphone_se.html">Khám phá tất cả iPhone SE</a>
+                    <a href="./iphone13.html">Khám phá tất cả iPhone 13</a>
+                    <a href="./iphone14.html">Khám phá tất cả iPhone 14</a>
+                    <a href="./iphone15.html">Khám phá tất cả iPhone 15</a>
+                    <a href="./iphone15_pro.html">Khám phá tất cả iPhone 15 Pro</a>
+                </div>
+                <div class="box">
+                  <span class="label">Mua iPhone</span>
+                  <a href="./buy.html" onclick="selectedType('iphone')" >Mua iPhone</a>
+              </div>
+            </div>
+          </div>
+          <a href="./cart.html" class="navigation__logo cart hidden"><svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m13.4575 16.9268h-1.1353a3.8394 3.8394 0 0 0 -7.6444 0h-1.1353a2.6032 2.6032 0 0 0 -2.6 2.6v8.9232a2.6032 2.6032 0 0 0 2.6 2.6h9.915a2.6032 2.6032 0 0 0 2.6-2.6v-8.9231a2.6032 2.6032 0 0 0 -2.6-2.6001zm-4.9575-2.2768a2.658 2.658 0 0 1 2.6221 2.2764h-5.2442a2.658 2.658 0 0 1 2.6221-2.2764zm6.3574 13.8a1.4014 1.4014 0 0 1 -1.4 1.4h-9.9149a1.4014 1.4014 0 0 1 -1.4-1.4v-8.9231a1.4014 1.4014 0 0 1 1.4-1.4h9.915a1.4014 1.4014 0 0 1 1.4 1.4z"></path></svg></a>
+          <div class="authentication">
+  
+          </div>
+  
+        </nav>
+  </nav>
+      </header>
+    <div class="nav-container">
+      <div class="nav">
+        <div class="item">
+          <div class="logo">
+            <a href="iphone15_pro.html"
+              ><img src="./iPhone/iphone_15_pro.svg" alt=""
+            /></a>
+          </div>
+          <div class="title">
+            <a href="iphone15_pro.html">iPhone 15 Pro</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="logo">
+            <a href="iphone15.html"
+              ><img src="./iPhone/iphone_15.svg" alt=""
+            /></a>
+          </div>
+          <div class="title">
+            <a href="iphone15.html">iPhone 15</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="logo">
+            <a href="iphone14.html"
+              ><img src="./iPhone/iphone_14.svg" alt=""
+            /></a>
+          </div>
+          <div class="title">
+            <a href="iphone14.html">iPhone 14</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="logo">
+            <a href="iphone13.html"
+              ><img src="./iPhone/iphone_13.svg" alt=""
+            /></a>
+          </div>
+          <div class="title">
+            <a href="iphone13.html">iPhone 13</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="logo">
+            <a href="iphone_se.html"
+              ><img src="./iPhone/iphone_se.svg" alt=""
+            /></a>
+          </div>
+          <div class="title">
+            <a href="iphone_se.html">iPhone SE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box1">
+      <h1>iPhone</h1>
+      <p>Được thiết kế để ai cũng mê.</p>
+    </div>
+
+    <div class="boxvideo">
+      <video id="video1" src="./iPhone/xlarge.mp4"></video>
+      <button id="playPause">
+        <ion-icon id="playPauseIcon" name="play-outline"></ion-icon>
+      </button>
+    </div>
+
+    <div class="box2">
+      <h1>Tìm hiểu iPhone</h1>
+    </div>
+
+    <div class="box2anh">
+      <div class="box2anh-nho" id="anh11">
+        <a href="#"><img src="./iPhone/anh1.jpg" alt="" /></a>
+        <div class="title2">
+          <h4>Camera Tiên Tiến</h4>
+          <h2>Chụp ảnh. <br />Làm phim. <br />Phá vỡ mọi giới hạn</h2>
+        </div>
+        <button id="plus"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+
+      <div class="box2anh-nho" id="anh22">
+        <a href="#"><img src="./iPhone/anh2.jpg" alt="" /></a>
+        <div class="title2">
+          <h4>Chip Do Apple Thiết Kế</h4>
+          <h2>Một tốc độ bạn có thể <br />nhận thấy.</h2>
+        </div>
+        <button id="plus"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+
+      <div class="box2anh-nho" id="anh33">
+        <a href="#"><img src="./iPhone/anh3.jpg" alt="" /></a>
+        <div class="title2">
+          <h4>Pin</h4>
+          <h2>Sức mạnh của thời lượng <br />pin tuyệt vời.</h2>
+        </div>
+        <button id="plus"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+
+      <div class="box2anh-nho" id="anh44">
+        <a href="#"><img src="./iPhone/anh4.jpg" alt="" /></a>
+        <div class="title2">
+          <h4>Đổi Mới Sáng Tạo</h4>
+          <h2>Đẹp và bền, <br />được mặc định trong thiết kế.</h2>
+        </div>
+        <button id="plus"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+
+      <div class="box2anh-nho" id="anh55">
+        <a href="#"><img src="./iPhone/anh5.jpg" alt="" /></a>
+        <div class="title2">
+          <h4>Quyền Riêng Tư</h4>
+          <h2>Dữ liệu của bạn. Ngay nơi <br />bạn muốn.</h2>
+        </div>
+        <button id="plus"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+
+      <div class="box2anh-nho" id="anh66">
+        <a href="#"><img src="./iPhone/anh6.jpg" alt="" /></a>
+        <div class="title2">
+          <h4>Môi Trường</h4>
+          <h2>Tái chế. Tái sử dụng. <br />Cứ thế.</h2>
+        </div>
+        <button id="plus"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <div class="box-chuyen2">
+      <button id="trai">
+        <ion-icon name="return-up-back-outline"></ion-icon>
+      </button>
+      <button id="phai">
+        <ion-icon name="return-down-forward-outline"></ion-icon>
+      </button>
+    </div>
+
+    <div class="box3">
+      <h1>Khám phá dòng sản phẩm</h1>
+    </div>
+
+    <div class="box3anh">
+      <div class="box3anh-nho">
+        <a href="iphone15_pro.html"
+          ><img class="anhnho" src="./iPhone/iphone_15_pro.png" alt=""
+        /></a>
+        <div class="title3">
+          <h3>iPhone 15 Pro</h3>
+          <p>Một iPhone cực đỉnh.</p>
+          <p>
+            <strong>Từ 28.999.000<sup>đ</sup></strong>
+          </p>
+          <button id="timhieu">
+            <a href="iphone15_pro.html">Tìm hiểu thêm</a>
+          </button>
+        </div>
+
+        <div class="chitiet">
+          <img src="./iPhone/a17.png" alt="" />
+          <p>Chip A17 Pro với GPU 6 lõi</p>
+          <img src="./iPhone/camera_iphone15_pro.png" alt="" />
+          <p>Hệ thống camera chuyên nghiệp</p>
+          <p>Camera Chính 48MP tiên tiến nhất của chúng tôi</p>
+          <p>Camera Telephoto 3x hoặc 5x</p>
+          <p>Camera Ultra Wide</p>
+          <img src="./iPhone/pin_100.png" alt="" />
+          <p>Thời gian xem video lên đến 29 giờ</p>
+        </div>
+      </div>
+
+      <div class="box3anh-nho">
+        <a href="iphone15.html"
+          ><img class="anhnho" src="./iPhone/iphone_15.png" alt=""
+        /></a>
+        <div class="title3">
+          <h3>iPhone 15</h3>
+          <p>Siêu mạng mẽ trên mọi mặt.</p>
+          <p>
+            <strong>Từ 22.999.000<sup>đ</sup></strong>
+          </p>
+          <button id="timhieu">
+            <a href="iphone15.html">Tìm hiểu thêm</a>
+          </button>
+        </div>
+        <div class="chitiet">
+          <img src="./iPhone/a16.png" alt="" />
+          <p>Chip A16 Bionic với GPU 5 lõi</p>
+          <img src="./iPhone/camera_iphone15.png" alt="" />
+          <p>Hệ thống camera kép tiên tiến</p>
+          <p>Camera Chính 48MP</p>
+          <p>Telephoto 2x</p>
+          <p>Camera Ultra Wide</p>
+          <img src="./iPhone/pin_100.png" alt="" />
+          <p>Thời gian xem video lên đến 26 giờ</p>
+        </div>
+      </div>
+
+      <div class="box3anh-nho">
+        <a href="iphone14.html"
+          ><img class="anhnho" src="./iPhone/iphone_14.png" alt=""
+        /></a>
+        <div class="title3">
+          <h3>iPhone 14</h3>
+          <p>Luôn tuyệt vời như thế.</p>
+          <p>
+            <strong>Từ 19.999.000<sup>đ</sup></strong>
+          </p>
+          <button id="timhieu">
+            <a href="iphone14.html">Tìm hiểu thêm</a>
+          </button>
+        </div>
+        <div class="chitiet">
+          <img src="./iPhone/a15.png" alt="" />
+          <p>Chip A15 Bionic với GPU 5 lõi</p>
+          <img src="./iPhone/camera_iphone14.png" alt="" />
+          <p>Hệ thống camera kép</p>
+          <p>Camera Chính 12MP</p>
+          <p>__</p>
+          <p>Camera Ultra Wide</p>
+          <img src="./iPhone/pin_100.png" alt="" />
+          <p>Thời gian xem video lên đến 26 giờ</p>
+        </div>
+      </div>
+
+      <div class="box3anh-nho">
+        <a href="iphone13.html"
+          ><img class="anhnho" src="./iPhone/iphone_13.png" alt=""
+        /></a>
+        <div class="title3">
+          <h3>iPhone 13</h3>
+          <p>Hội tụ mọi điều tuyệt diệu.</p>
+          <p>
+            <strong>Từ 17.299.000<sup>đ</sup></strong>
+          </p>
+          <button id="timhieu">
+            <a href="iphone13.html">Tìm hiểu thêm</a>
+          </button>
+        </div>
+        <div class="chitiet">
+          <img src="./iPhone/a15.png" alt="" />
+          <p>Chip A15 Bionic với GPU 4 lõi</p>
+          <img src="./iPhone/camera_iphone13.png" alt="" />
+          <p>Hệ thống camera kép</p>
+          <p>Camera Chính 12MP</p>
+          <p>__</p>
+          <p>Camera Ultra Wide</p>
+          <img src="./iPhone/pin_100.png" alt="" />
+          <p>Thời gian xem video lên đến 19 giờ</p>
+        </div>
+      </div>
+
+      <div class="box3anh-nho">
+        <a href="iphone_se.html"
+          ><img class="anhnho" src="./iPhone/iphone_se.png" alt=""
+        /></a>
+        <div class="title3">
+          <h3>iPhone SE</h3>
+          <p>Thực sự mạnh mẽ. Thực sự giá trị.</p>
+          <p>
+            <strong>Từ 11.999.000<sup>đ</sup></strong>
+          </p>
+          <button id="timhieu">
+            <a href="iphone_se.html">Tìm hiểu thêm</a>
+          </button>
+        </div>
+        <div class="chitiet">
+          <img src="./iPhone/a15.png" alt="" />
+          <p>Chip A15 Bionic với GPU 4 lõi</p>
+          <img src="./iPhone/camera_iphone_se.png" alt="" />
+          <p>Hệ thống camera đơn</p>
+          <p>Camera Chính 12MP</p>
+          <p>__</p>
+          <p>__</p>
+          <img src="./iPhone/pin_100.png" alt="" />
+          <p>Thời gian xem video lên đến 15 giờ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-chuyen3">
+      <button id="trai3">
+        <ion-icon name="return-up-back-outline"></ion-icon>
+      </button>
+      <button id="phai3">
+        <ion-icon name="return-down-forward-outline"></ion-icon>
+      </button>
+    </div>
+
+    <div class="box-an" id="box-an1">
+      <div class="popup" id="popup1">
+        <div id="close">
+          <p>x</p>
+        </div>
+        <h3>Camera Tiên tiến</h3>
+        <h1>Chụp ảnh.</h1>
+        <h1>Làm phim.</h1>
+        <h1>Phá vỡ mọi giới hạn.</h1>
+        <div class="popup-nho">
+          <p>
+            Đẹp lộng lẫy giờ dễ đến vậy. Các camera tiên tiến trên iPhone tự
+            động chụp những bức ảnh ấn tượng với độ chi tiết và màu sắc tuyệt
+            vời. Bạn muốn tự chủ sáng tạo hơn nữa? iPhone 15 Pro giúp bạn chụp
+            và chỉnh sửa ảnh trong ProRAW một cách dễ dàng, và đây chỉ là một
+            trong nhiều tính năng chụp ảnh chuyên nghiệp.
+          </p>
+          <img
+            src="./iPhone/dd_camera_stunning__nu0stlae2qie_large.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Làm phim y như phim chiếu rạp. Điện thoại ghi hình ở chế độ HDR, nhờ
+            đó dù bạn sử dụng chế độ Hành Động để giữ ổn định cho các cảnh quay
+            bị rung nhòe hay quay với hiệu ứng chiều sâu đầy nghệ thuật bằng chế
+            độ Điện Ảnh ở độ phân giải 4K, mọi khung hình đều trông thật ấn
+            tượng.
+          </p>
+          <img src="./iPhone/dd_camera_movies__f3dslromnsmu_large.jpg" alt="" />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Zoom, zoom nữa, zoom nữa. Với phạm vi tiêu cự rộng, iPhone đem đến
+            cho bạn sự linh hoạt đặc biệt khi chọn khung hình, từ những ảnh chụp
+            cận cảnh sắc nét đến những bức ảnh Ultra Wide siêu rộng cho phép bạn
+            bắt trọn thêm nhiều khung cảnh hơn mà không cần lùi về sau.
+          </p>
+          <img
+            src="./iPhone/dd_camera_control__d66cnig7aiky_large.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box-an" id="box-an2">
+      <div class="popup" id="popup2">
+        <div id="close">
+          <p>x</p>
+        </div>
+        <h3>Chip Do Apple Thiết Kế</h3>
+        <h1>Một tốc độ bạn có thể nhận thấy.</h1>
+        <div class="popup-nho">
+          <p>
+            Những con chip thay đổi cuộc chơi. Cực kỳ thông minh và mạnh mẽ,
+            chip của iPhone khiến mọi thứ bạn làm đều tuyệt hơn. A17 Pro đem đến
+            hiệu năng đồ họa tiên tiến nhất, vượt xa những gì từng có, hỗ trợ
+            chơi những game chưa từng thấy trên bất kỳ điện thoại thông minh
+            nào.
+          </p>
+          <img src="./iPhone/dd_chip_built__eylp7o8t3c66_medium.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="box-an" id="box-an3">
+      <div class="popup" id="popup3">
+        <div id="close">
+          <p>x</p>
+        </div>
+        <h3>Pin</h3>
+        <h1>Sức mạnh của thời lượng pin tuyệt vời.</h1>
+        <div class="popup-nho">
+          <p>
+            Thời lượng pin bền bỉ? 100%. Phần cứng và phần mềm của chúng tôi
+            được thiết kế với khả năng phối hợp vận hành hiệu quả, do đó bạn có
+            thể làm được nhiều việc hơn chỉ với một lần sạc, như thời gian xem
+            video lên đến 29 giờ trên iPhone 15 Pro Max.
+          </p>
+          <img
+            src="./iPhone/dd_battery_charge__etn3cqsun4om_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Dành cho 5G. iPhone + 5G = một trải nghiệm siêu tốc. Và khi bạn
+            không cần đến tốc độ cao, iPhone tự động chuyển sang chế độ Dữ Liệu
+            Thông Minh để duy trì thời lượng pin.
+          </p>
+          <img src="./iPhone/dd_battery_5g__csxfi8w8y9iu_medium.jpg" alt="" />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Sạc. Đầy. Nhanh. Gắn vào Bộ Sạc MagSafe.4 Hoặc cắm vào Bộ Tiếp Hợp
+            Nguồn USB-C 20W. Các phiên bản mới nhất của chúng tôi cũng có cổng
+            USB-C, nhờ đó bạn có thể sạc iPhone bằng cùng cáp sạc với Mac và
+            iPad.
+          </p>
+          <img
+            src="./iPhone/dd_battery_power__cnindpn2l7ki_medium.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box-an" id="box-an4">
+      <div class="popup" id="popup4">
+        <div id="close">
+          <p>x</p>
+        </div>
+        <h3>Đổi Mới Sáng Tạo</h3>
+        <h1>Đẹp và bền, được mặc định trong thiết kế.</h1>
+        <div class="popup-nho">
+          <p>
+            Không gì sánh bằng. iPhone được biết đến với thiết kế mang tính biểu
+            tượng và vật liệu cao cấp, như iPhone 15 Pro được đúc bằng titan.
+            Trên màn hình rực rỡ, Dynamic Island hiển thị linh động những thông
+            tin quan trọng để bạn không bỏ lỡ bất kỳ điều gì.
+          </p>
+          <img
+            src="./iPhone/dd_innovation_iphone__5qtjkfdtj36u_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Chiếc điện thoại thách thức thời gian. iPhone có mặt trước Ceramic
+            Shield bền chắc hơn mọi mặt kính điện thoại thông minh. Vô tình làm
+            đổ nước? Không vấn đề gì lớn. iPhone cũng có thể chống các tia chất
+            lỏng thường gặp như nước, cà phê và soda.
+          </p>
+          <img
+            src="./iPhone/dd_innovation_last__bx745smx1s02_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Trải nghiệm mượt mà. Chúng tôi thiết kế phần cứng và phần mềm hài
+            hòa với nhau để mang lại cho người dùng một trải nghiệm hoàn toàn
+            thông suốt. Bạn muốn chia sẻ thông tin liên hệ của mình? Giữ iPhone
+            của bạn gần với iPhone của người kia. Bạn có AirPods mới? Chỉ cần
+            một thao tác chạm là thiết lập xong. Và các bản cập nhật iOS thường
+            xuyên giúp giữ cảm giác mới mẻ cho iPhone của bạn.
+          </p>
+          <img
+            src="./iPhone/dd_innovation_seamless__flyf6u1149qq_medium.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box-an" id="box-an5">
+      <div class="popup" id="popup5">
+        <div id="close">
+          <p>x</p>
+        </div>
+        <h3>Quyền Riêng Tư</h3>
+        <h1>Dữ liệu của bạn. Ngay nơi bạn muốn.</h1>
+        <div class="popup-nho">
+          <p>
+            Đăng nhập an toàn. Mã khóa là phương thức đăng nhập dễ dàng, an toàn
+            hơn mà không còn cần dùng đến mật khẩu. Với Face ID, bạn có thể đăng
+            nhập vào các ứng dụng. Và tính năng Tự Động Điền trong Safari sẽ ghi
+            nhớ tên người dùng cùng mật khẩu cho các trang web trên mọi thiết bị
+            Apple của bạn.
+          </p>
+          <img
+            src="./iPhone/dd_privacy_browse__dgvtvu1y1l0m_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Lướt web bảo mật. Tính năng Duyệt Riêng Tư sẽ khóa các cửa sổ duyệt
+            riêng tư khi bạn không sử dụng, chặn hoàn toàn hoạt động tải trên
+            trang đối với những trình theo dõi đã nhận diện, cũng như loại bỏ
+            các thành phần theo dõi nhận dạng được thêm vào URL khi bạn duyệt
+            web.
+          </p>
+          <img src="./iPhone/dd_privacy_lock__fjng96eu3re6_medium.jpg" alt="" />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Chia sẻ riêng tư. Tất cả tin nhắn được gửi đi bằng iMessage đều được
+            mã hóa đầu cuối giữa các thiết bị, nhờ đó chỉ những người mà bạn gửi
+            đến mới xem được. Và tính năng Bảo Vệ Quyền Riêng Tư Trong Mail ẩn
+            địa chỉ IP của bạn, vì vậy người gửi không thể xác định vị trí của
+            bạn.
+          </p>
+          <img
+            src="./iPhone/dd_privacy_share__e9wob5s0s2ai_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Thanh toán kiểu Apple Pay. Khi bạn thanh toán bằng Apple Pay, số thẻ
+            của bạn không bao giờ được lưu trên thiết bị của bạn hay trên máy
+            chủ của Apple và cũng không bao giờ được Apple chia sẻ với người
+            bán.
+          </p>
+          <img
+            src="./iPhone/dd_privacy_protect__d78x8ebbfjqu_medium.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="box-an" id="box-an6">
+      <div class="popup" id="popup6">
+        <div id="close">
+          <p>x</p>
+        </div>
+        <h3>Môi Trường</h3>
+        <h1>Tái chế. Tái sử dụng. Cứ thế.</h1>
+        <div class="popup-nho">
+          <p>
+            Cải tiến trong bảo tồn. Các robot tháo dỡ của chúng tôi là Daisy,
+            Dave và Taz sẽ thu hồi lại các vật liệu quan trọng như vàng, cô-ban,
+            vonfram và các nguyên tố đất hiếm từ các phiên bản iPhone tái chế,
+            để tái sử dụng trong những thiết bị mới.
+          </p>
+          <img
+            src="./iPhone/dd_environment_innovation__k2tmx1h2ilmm_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Chứa nhiều vật liệu tái chế hơn? Dĩ nhiên. Chúng tôi đang tăng cường
+            sử dụng các kim loại tái chế chính trong pin, nam châm và bảng mạch
+            iPhone. Ví dụ có thể kể tới là trên các phiên bản mới nhất của chúng
+            tôi, 100% cô-ban trong pin là cô-ban tái chế.
+          </p>
+          <img
+            src="./iPhone/dd_environment_recycle__dikoyk191kae_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Apple Trade In. Khi bạn sẵn sàng mua một chiếc iPhone mới, bạn có
+            thể đổi iPhone hoặc thiết bị Android hiện tại để lấy điểm tín dụng
+            để mua thiết bị mới. Nếu thiết bị của bạn không đủ điều kiện để đổi
+            lấy điểm tín dụng, chúng tôi sẽ tái chế thiết bị miễn phí.
+          </p>
+          <img
+            src="./iPhone/dd_environment_trade_in__ffgz1k6741e2_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Bao bì như ý hành tinh. Giờ đây 99% bao bì iPhone được làm từ sợi,9
+            với 100% sợi gỗ tái chế hoặc từ các nguồn có trách nhiệm.10 Và không
+            sử dụng lớp bọc nhựa quanh hộp đựng.
+          </p>
+          <img
+            src="./iPhone/dd_environment_packaging__glrksb1zc2uu_medium.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-nho">
+          <p>
+            Vững bước đến mục tiêu trung hòa carbon. Các cửa hàng, văn phòng và
+            trung tâm dữ liệu của chúng tôi đều đã trung hòa carbon. Đến năm
+            2030, sản phẩm của chúng tôi và tác động đến môi trường khi sử dụng
+            các sản phẩm của chúng tôi cũng sẽ trung hòa carbon.
+          </p>
+          <img
+            src="./iPhone/dd_environment_zero__efy2cse3mju6_medium.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="end1">
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Mua Sắm Và Tìm Hiểu</span>
+              <ul>
+                <li>
+                  <a href="#">Cửa Hàng</a>
+                </li>
+                <li>
+                  <a href="#">Mac</a>
+                </li>
+                <li>
+                  <a href="#">iPad</a>
+                </li>
+                <li>
+                  <a href="#">iPhone</a>
+                </li>
+                <li>
+                  <a href="#">Watch</a>
+                </li>
+                <li>
+                  <a href="#">AirPods</a>
+                </li>
+                <li>
+                  <a href="#">TV & Nhà</a>
+                </li>
+                <li>
+                  <a href="#">AirTag</a>
+                </li>
+                <li>
+                  <a href="#">Phụ Kiện</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Ví Apple</span>
+              <ul>
+                <li>
+                  <a href="#">Ví</a>
+                </li>
+                <li>
+                  <a href="#">Apple Pay</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Tài Khoản</span>
+              <ul>
+                <li>
+                  <a href="#">Quản Lý ID Apple Của Bạn</a>
+                </li>
+                <li>
+                  <a href="#">Tài Khoản Apple Store</a>
+                </li>
+                <li>
+                  <a href="#">iCloud.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Giải Trí</span>
+              <ul>
+                <li>
+                  <a href="#">Apple One</a>
+                </li>
+                <li>
+                  <a href="#">Apple TV+</a>
+                </li>
+                <li>
+                  <a href="#">Apple Music</a>
+                </li>
+                <li>
+                  <a href="#">Apple Arcade</a>
+                </li>
+                <li>
+                  <a href="#">Apple Podcasts</a>
+                </li>
+                <li>
+                  <a href="#">Apple Books</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Apple Store</span>
+              <ul>
+                <li>
+                  <a href="#">Ứng Dụng Apple Store</a>
+                </li>
+                <li>
+                  <a href="#">Apple Trade In</a>
+                </li>
+                <li>
+                  <a href="#">Tài Chính</a>
+                </li>
+                <li>
+                  <a href="#">Tình Trạng Đơn Hàng</a>
+                </li>
+                <li>
+                  <a href="#">Hỗ Trợ Mua Hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Dành Cho Doanh Nghiệp</span>
+              <ul>
+                <li>
+                  <a href="#">Apple Và Doanh Nghiệp</a>
+                </li>
+                <li>
+                  <a href="#">Mua Hàng Cho Doanh Nghiệp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Cho Giáo Dục</span>
+              <ul>
+                <li>
+                  <a href="#">Apple Và Giáo Dục</a>
+                </li>
+                <li>
+                  <a href="#">Mua Hàng Cho Bậc Đại Học</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part3">
+              <span class="label">Cho Chăm Sóc Sức Khỏe</span>
+              <ul>
+                <li>
+                  <a href="#">Apple Trong Chăm Sóc Sức Khỏe</a>
+                </li>
+                <li>
+                  <a href="#">Sức Khỏe Trên Apple Watch</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="part part1">
+              <span class="label">Giá Trị Cốt Lõi Của Apple</span>
+              <ul>
+                <li>
+                  <a href="#">Trợ Năng</a>
+                </li>
+                <li>
+                  <a href="#">Môi Trường</a>
+                </li>
+                <li>
+                  <a href="#">Quyền Riêng Tư</a>
+                </li>
+                <li>
+                  <a href="#">Chuỗi Cung Ứng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Về Apple</span>
+              <ul>
+                <li>
+                  <a href="#">Newsroom</a>
+                </li>
+                <li>
+                  <a href="#">Lãnh Đạo Của Apple</a>
+                </li>
+                <li>
+                  <a href="#">Nhà Đầu Tư</a>
+                </li>
+                <li>
+                  <a href="#">Đạo Đức & Quy Tắc</a>
+                </li>
+                <li>
+                  <a href="#">Sự Kiện</a>
+                </li>
+                <li>
+                  <a href="#">Liên Hệ Apple</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="end2">Xem thêm cách để mua hàng: <a href="#">Tìm cửa hàng bán lẻ</a> gần bạn. Hoặc gọi 1800 1192.</p>
+
+        <div class="end3">
+          <div>
+            <p>Bản quyền © Apple Inc. 2024 Bảo lưu mọi quyền.</p>
+            <a href="#">Việt Nam</a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Chính Sách Quyền Riêng Tư</a>
+            </li>
+            <li>
+              <a href="#">Điều Khoản Sử Dụng</a>
+            </li>
+            <li>
+              <a href="#">Pháp Lý</a>
+            </li>
+            <li>
+              <a href="#">Bán Hàng Và Hoàn Tiền</a>
+            </li>
+            <li>
+              <a href="#">Bản Đồ Trang Web</a>
+            </li>
+          </ul>
+        </div>
+    </footer>
+    <div class="gototop">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    <script src="./iphone.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="./global.js"></script>
+  </body>
+</html>

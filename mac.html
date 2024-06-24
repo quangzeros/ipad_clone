@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <html lang="en"></html>
+        <!-- <link rel="stylesheet" href="./style.css"> -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./mac.css">
+        <link rel="stylesheet" type="text/css" href="./macBook_air.html">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+              <a href="./index.html" class="navigation__logo"
+                ><svg
+                  height="44"
+                  viewBox="0 0 14 44"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"
+                  ></path>
+                </svg>
+              </a>
+              <div class="dropdown">
+                <a href="./index.html" class="navigation__tag">Cửa hàng</a>
+              </div>
+              <div class="dropdown">
+                <a href="./mac.html" class="navigation__tag">Mac</a>
+                  <div class="dropdown-content">
+                    <div class="box">
+                        <span class="label">Khám phá Mac</span>
+                        <a href="./mac.html">Khám phá tất cả Mac</a>
+                        <a href="./macBook_pro.html">Khám phá tất cả MacBook Pro</a>
+                        <a href="./macBook_air.html">Khám phá tất cả MacBook Air</a>
+                        <a href="./imac.html">Khám phá tất cả iMac</a>
+                    </div>
+                    <div class="box">
+                      <span class="label">Mua Mac</span>
+                      <a href="./buy.html" onclick="selectedType('mac')" >Mua iPad</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="./index.html" class="navigation__tag">iPad</a>
+                  <div class="dropdown-content">
+                    <div class="box">
+                        <span class="label">Khám phá iPad</span>
+                        <a href="./index.html">Khám phá tất cả iPad</a>
+                    </div>
+                    <div class="box">
+                      <span class="label">Mua iPad</span>
+                      <a href="./buy.html" onclick="selectedType('ipad')" >Mua iPad</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                      <a href="./iphone.html" class="navigation__tag">iPhone</a>
+                  <div class="dropdown-content">
+                    <div class="box">
+                        <span class="label">Khám phá iPhone</span>
+                        <a href="./iphone.html">Khám phá tất cả iPhone</a>
+                        <a href="./iphone_se.html">Khám phá tất cả iPhone SE</a>
+                        <a href="./iphone13.html">Khám phá tất cả iPhone 13</a>
+                        <a href="./iphone14.html">Khám phá tất cả iPhone 14</a>
+                        <a href="./iphone15.html">Khám phá tất cả iPhone 15</a>
+                        <a href="./iphone15_pro.html">Khám phá tất cả iPhone 15 Pro</a>
+                    </div>
+                    <div class="box">
+                      <span class="label">Mua iPhone</span>
+                      <a href="./buy.html" onclick="selectedType('iphone')" >Mua iPhone</a>
+                  </div>
+                </div>
+              </div>
+              <a href="./cart.html" class="navigation__logo cart hidden"><svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m13.4575 16.9268h-1.1353a3.8394 3.8394 0 0 0 -7.6444 0h-1.1353a2.6032 2.6032 0 0 0 -2.6 2.6v8.9232a2.6032 2.6032 0 0 0 2.6 2.6h9.915a2.6032 2.6032 0 0 0 2.6-2.6v-8.9231a2.6032 2.6032 0 0 0 -2.6-2.6001zm-4.9575-2.2768a2.658 2.658 0 0 1 2.6221 2.2764h-5.2442a2.658 2.658 0 0 1 2.6221-2.2764zm6.3574 13.8a1.4014 1.4014 0 0 1 -1.4 1.4h-9.9149a1.4014 1.4014 0 0 1 -1.4-1.4v-8.9231a1.4014 1.4014 0 0 1 1.4-1.4h9.915a1.4014 1.4014 0 0 1 1.4 1.4z"></path></svg></a>
+              <div class="authentication">
+      
+              </div>
+      
+            </nav>
+      </nav>
+          </header>
+            <nav id="menunav">
+                <div class="menu2">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <a href="macBook_air.html">
+                                <img src="./image/macbookAir.svg" alt="macAir" class="menunav-icon">
+                                <span class="menunav-label">MacBook Air</span>
+                                <span class="menunav-new">Mới</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macBook_pro.html">
+                                <img src="./image/macbookPro.svg" alt="macbookPro" class="menunav-icon">
+                                <span class="menunav-label">MacBook Pro</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="imac.html">
+                                <img src="./image/imac.svg" alt="iMac" class="menunav-icon">
+                                <span class="menunav-label">iMac</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macMini.html">
+                                <img src="./image/macMini.svg" alt="macMini" class="menunav-icon" height="80px" width="50px">
+                                <span class="menunav-label">Mac mini</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macStudio.html">
+                                <img src="./image/macStudio.svg" alt="macStudio" class="menunav-icon" height="80px" width="50px">
+                                <span class="menunav-label">Mac Studio</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macPro.html">
+                                <img src="./image/macPro.svg" alt="macPro" class="menunav-icon" height="100px" width="50px">
+                                <span class="menunav-label">Mac Pro</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="main">
+                <div class="main-content">
+                    <header class="main-header">
+                        <h1 class="main-header-headline">Mac</h1>
+                        <div class="main-header-copy">
+                            <p>"Bạn nghĩ được"
+                                <br>
+                                "là Mac làm được."
+                            </p>
+                        </div>
+                    </header>
+                </div>
+                    <div class="video-wall-container">
+                        <div class="video-wall-content-container">
+                            <video class="video-wall" autoplay muted loop id="myVideo">
+                                <source src="./image/medium.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-srcim"></div>
+                        <div class="video-controls-container">
+                            <ion-icon id="myBtn" name="pause" onclick="myFunction()"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-content">
+                    <header class="section-header">
+                        <h2 class="section-header-headline">Tìm hiểu về Mac</h2>
+                    </header>
+                </div>
+                <div class="scroll-cards">
+                    <div class="scroll-container">
+                        <div class="item-container">
+                            <ul class="card-set">
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label">Bắt Đầu</p>
+                                                            <p class="card-headline">Dễ dàng sử dụng. Dễ siêu lòng.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_ease_hello.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Bắt Đầu</h3>
+                                        <p class="modal-headline">Dễ dàng sử dụng. Dễ siêu lòng.</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Quen thuộc như ịPhone.</h3>
+                                            <p class="modal-headline-1">Bạn sẽ lập tức thấy quen thuộc với Mac, với rất nhiều ứng dụng tương tự iPhone như Tin Nhắn, Ảnh và FaceTime.</p>
+                                            <img id="img01" src="./image/boc_ease_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Đầy dủ cả.</h3>
+                                            <p class="modal-headline-1">Hãy bắt đầu từ những ứng dụng bạn dùng mỗi ngày như Mail, Lịch, cũng như Safari để lướt web. Và nếu bạn muốn tạo tài liệu, bảng tính hoặc bài thuyết trình, Mac tích hợp sẵn các ứng dụng năng suất mạnh mẽ như Pages, Numbers, và Keynote.</p>
+                                            <img id="img02" src="./image/boc_ease_02.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Thiết lập đơn giản.</h3>
+                                            <p class="modal-headline-1">Trợ Lý Di Chuyển giúp bạn dễ dàng chuyển dữ liệu — bao gồm tài liệu, ảnh, cài đặt và tài khoản người dùng — từ Mac hoặc PC cũ của bạn.</p>
+                                            <img id="img03" src="./image/boc_ease_03.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label">Hiệu Năng và Thời Lượng Pin</p>
+                                                            <p class="card-headline">Mượt mà. Thời lượng pin dài.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_performance_small.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Hiệu Năng và Thời Lượng Pin</h3>
+                                        <p class="modal-headline">Mượt mà. Thời lượng pin dài.</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Siêu mạnh mẽ với Apple silicon.</h3>
+                                            <p class="modal-headline-1"> Apple silicon mang đến cho máy Mac sức mạnh và tốc độ có khả năng thay đổi cuộc chơi. Máy tích hợp CPU, GPU, Neural Engine vào chỉ một chip tiết kiệm điện, qua đó tăng tốc mọi việc bạn làm.</p>
+                                            <img id="img03" src="./image/boc_performance_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Thời lượng pin đỉnh cao.</h3>
+                                            <p class="modal-headline-1">Nhờ khả năng tiết kiệm điện của Apple silicon, máy tính xách tay Mac có thời lượng pin phi thường cùng hiệu năng vượt trội, bất kể bạn có đang cắm sạc hay không.</p>
+                                            <img id="img03" src="./image/boc_performance_02.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Làm giỏi. Làm nhanh.</h3>
+                                            <p class="modal-headline-1">Từ thiết kế bài thuyết trình tuyệt đẹp cho đến tạo một bảng tính hoành tráng, Mac giúp bạn hoàn thành nhiều việc hơn và nhanh chóng hơn, bất kể bạn đang học tập trên lớp hay điều hành doanh nghiệp.</p>
+                                            <img id="img03" src="./image/boc_performance_03.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Nghĩ ra là xong ngay.</h3>
+                                            <p class="modal-headline-1">Từ thu âm podcast cho đến biên tập thước phim điện ảnh đầu tay, bạn có thể thỏa sức sáng tạo theo những cách hoàn toàn mới với tốc độ và sức mạnh của máy Mac siêu năng lực này.
+                                            </p>
+                                            <img id="img03" src="./image/boc_performance_04.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label-1">Mac và iPhone</p>
+                                                            <p class="card-headline-1">Đội hình trong mơ.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_iphone_small.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Mac và iPhone</h3>
+                                        <p class="modal-headline">Đội hình trong mơ.</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Trả lời cuộc gọi ngay trên Mac.</h3>
+                                            <p class="modal-headline-1">ạn có thể trả lời cuộc gọi hoặc tin nhắn từ iPhone ngay trên Mac. Tất cả các tin nhắn xuất hiện trên iPhone của bạn cũng sẽ xuất hiện trên Mac.</p>
+                                            <img id="img01" src="./image/boc_mac_iphone_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Chụp ảnh trên iPhone.</h3>
+                                            <p class="modal-headline-1">Xem trên Mac. Sử dụng iPhone của bạn để chụp ảnh hay scan tài liệu và nội dung sẽ tự động xuất hiện trên máy Mac của bạn.</p>
+                                            <img id="img01" src="./image/boc_mac_iphone_02.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Bắt đầu ở đây. Hoàn thành ở kia.</h3>
+                                            <p class="modal-headline-1">Bắt đầu viết email trên iPhone và hoàn thiện email đó trên máy Mac. Với Handoff, khi máy Mac và iPhone của bạn ở gần nhau, bạn có thể đồng bộ liền mạch những gì mình đang làm từ thiết bị này sang thiết bị kia.</p>
+                                            <img id="img01" src="./image/boc_mac_iphone_03.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label-1">Khả Năng Tương thích</p>
+                                                            <p class="card-headline-1">Mac chạy các ứng dụng yêu thích của bạn.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_compatibility_small.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Khả Năng Tương thích</h3>
+                                        <p class="modal-headline">Mac chạy các ứng dụng yêu thích của bạn.</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Các ứng dụng yêu thích ngay trên Mac của bạn.</h3>
+                                            <p class="modal-headline-1">Từ Microsoft 365, Adobe Creative Cloud cho đến Zoom, tất cả các ứng dụng bạn quen dùng đều cực nhanh và linh hoạt trên máy Mac.</p>
+                                            <img id="img03" src="./image/boc_compatibility_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Kết nối tối ưu.</h3>
+                                            <p class="modal-headline-1">Máy Mac trang bị tất cả các cổng bạn cần để dùng những phụ kiện yêu thích như màn hình ngoài, ổ đĩa cứng, máy ảnh và máy in.</p>
+                                            <img id="img03" src="./image/boc_compatibility_02.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label">Quyền Riêng Tư và Bảo Mật</p>
+                                                            <p class="card-headline">Việc của bạn, chỉ riêng bạn.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_security_small.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Quyền Riêng Tư và Bảo Mật</h3>
+                                        <p class="modal-headline">Việc của bạn, chỉ riêng bạn</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Bạn chính là mật khẩu của mình.</h3>
+                                            <p class="modal-headline-1">Touch ID giúp bạn sẵn sàng tiếp cận mật khẩu với một cú chạm. Nhờ đó, bạn có thể dùng tính năng này để mở khóa máy Mac, truy cập mã khóa cũng như thực hiện thanh toán.</p>
+                                            <img id="img01" src="./image/boc_security_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Một ứng dụng để tìm kiếm tất cả.</h3>
+                                            <p class="modal-headline-1">Nếu bạn không tìm được máy Mac hoặc các thiết bị Apple khác, ứng dụng Tìm có thể giúp bạn dễ dàng xác định vị trí của các thiết bị đó. Thậm chí, bạn có thể phát âm thanh để giúp bạn định vị chúng.</p>
+                                            <img id="img03" src="./image/boc_security_02.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Được thiết kế để giúp bảo vệ quyền riêng tư của bạn.</h3>
+                                            <p class="modal-headline-1">Mac cho bạn tự do chọn chia sẻ những gì và chia sẻ như thế nào, vì thế bạn có thể bảo vệ dữ liệu của mình và giữ cho bản thân được an toàn hơn trên mạng.</p>
+                                            <img id="img03" src="./image/boc_security_03.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label-1">Độ Bền</p>
+                                                            <p class="card-headline-1">Đươc thiết kế để trụ vững với thời gian.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_durability_small.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Độ Bền</h3>
+                                        <p class="modal-headline">Đươc thiết kế để trụ vững với thời gian.</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Bền bỉ siêu hạng.</h3>
+                                            <p class="modal-headline-1">Chúng tôi thiết kế sản phẩm chú trọng về độ bền. Với vỏ máy được làm từ nhôm tái chế, máy tính Mac được thiết kế vô cùng bền chắc và sẵn sàng cho gần như mọi thứ.</p>
+                                            <img id="img01" src="./image/boc_durability_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Luôn cập nhật và tin cậy.</h3>
+                                            <p class="modal-headline-1"> Các bản cập nhật macOS miễn phí mang đến những tính năng mới nhất, đồng thời giúp máy Mac tiếp tục chạy mượt mà và an toàn.</p>
+                                            <img id="img03" src="./image/boc_durability_02.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gallery-item">
+                                    <div class="feature-card myDiv">
+                                        <div class="card" tabindex="-1">
+                                            <div class="card-modifier">
+                                                <div class="card-viewport-content">
+                                                    <div class="feature-card-content">
+                                                        <div class="feature-card-copy">
+                                                            <p class="feature-card-label-1">Giá Trị Cốt Lõi Apple</p>
+                                                            <p class="card-headline-1">Giá trị của chúng tôi định hướng mọi việc chúng tôi làm.</p>
+                                                        </div>
+                                                        <figure class="feature-card-image">
+                                                            <picture class="overview-consider-mac-hello">
+                                                                <img src="./image/mac_values_small.jpg" alt="mac_hello" media="max-width:734px">
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my Modal modal">
+                                        <span class="close1">&times;</span> 
+                                        <h3 class="modal-topic-label">Giá Trị Cốt Lõi Apple</h3>
+                                        <p class="modal-headline">Giá trị của chúng tôi định hướng mọi việc chúng tôi làm.</p>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Vì một tương lai tốt đẹp hơn.</h3>
+                                            <p class="modal-headline-1">Chúng tôi đang thay đổi cách chúng tôi sản xuất, lắp ráp và tái chế Mac. Chúng tôi hiện đang sử dụng 100% nhôm tái chế trong vỏ máy Mac mini, MacBook Air và MacBook Pro. Vì Trái Đất không thể đợi thêm, và chúng ta cũng vậy.</p>
+                                            <img id="img03" src="./image/boc_values_01.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Tốt cho bạn. Tốt cho môi trường.</h3>
+                                            <p class="modal-headline-1">Với Apple Trade In, bạn có thể nhận được khoản giá trị xứng đáng khi đổi máy Mac đang dùng và sử dụng giá trị đó để mua thiết bị mới. Nếu máy Mac của bạn không đủ điều kiện để đổi lấy điểm tín dụng, chúng tôi sẽ tái chế thiết bị miễn phí.</p>
+                                            <img id="img03" src="./image/boc_values_02.jpg" alt="mac_security">
+                                        </div>
+                                        <div class="feature-card-modal-title">
+                                            <h3 class="modal-topic-label-1">Trợ năng cho mọi người.</h3>
+                                            <p class="modal-headline-1">Với Cài Đặt Màn Hình, Giọng Nói Cá Nhân có thể tùy chỉnh và nhiều tính năng khác, Mac tích hợp các tính năng trợ năng hàng đầu trong ngành giúp bạn kết nối, tạo và làm mọi thứ bạn yêu thích theo những cách phù hợp nhất với bạn.</p>
+                                            <img id="img02" src="./image/boc_values_03.jpg" alt="mac_security">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-content">
+                    <header class="section-header">
+                        <h2 class="section-header-headline">
+                            Vì sao Apple là nơi tốt nhất
+                            <br>
+                            để mua Mac.
+                        </h2>
+                    </header>
+                </div>
+                <div class="scroll-container-icon">
+                    <div class="scroll-container">
+                        <div class="item-container">
+                            <ul class="card-set">
+                                <li class="gallery-item-1">
+                                    <div class="icon-card myDiv">
+                                        <div class="card-1" tabindex="-1">
+                                            <div class="card-modifier-1">
+                                                <div class="card-viewport-content">
+                                                    <div class="icon-card-container">
+                                                        <div class="icon-container">
+                                                            <img src="./image/icon_apple_card_.png" alt="applr_card">
+                                                        </div>
+                                                        <div class="copy-container">
+                                                            <h3 class="typo-card-headline">Trả với lãi suất thấp, thười hạn thanh toán lên đến 24 tháng.</h3>
+                                                            <p class="family-paragraph"><font _mstmutation="1">Khoản thanh toán hàng tháng thấp và chỉ cần trả trước 20% khi bạn chọn trả góp hàng tháng với Momo.</font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myModal" class="myModal modal">
+                                        <span class="close2">&times;</span> 
+                                        <h3 class="modal-topic-label">Thanh toán hàng tháng thật dễ dàng.</h3>
+                                        <p class="modal-headline">Sản phẩm Apple nay dễ sở hữu hơn bao giờ hết.<p>
+                                        <p class="modal-headline-1">Chia nhỏ chi phí cho các sản phẩm yêu thích bằng cách trả hàng tháng. Trong khi thanh toán, bạn có thể chọn ưu đãi trả góp và kỳ hạn phù hợp nhất.</p>
+                                    </div>
+                                </li>
+                                <li class="gallery-item-1">
+                                    <div class="icon-card myDiv">
+                                        <div class="card-1" tabindex="-1">
+                                            <div class="card-modifier-1">
+                                                <div class="card-viewport-content">
+                                                    <div class="icon-card-container">
+                                                        <div class="icon-container">
+                                                            <img src="./image/icon_trade_in.png" alt="applr_card">
+                                                        </div>
+                                                        <div class="copy-container">
+                                                            <h3 class="typo-card-headline">Tiết kiệm với Apple Trade In.</h3>
+                                                            <p class="family-paragraph"><font _mstmutation="1">Đổi các thiết bị đủ điều kiện của bạn lấy diểm tín dụng cho lần mua tiếp theo.</font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myModal" class="myModal modal">
+                                        <span class="close2">&times;</span> 
+                                        <h3 class="modal-topic-label">Apple Trade in</h3>
+                                        <p class="modal-headline">Nhận tín dụng đổi cũ lấy mới để mua thiết bị mới.</p>
+                                        <p class="modal-headline-1">Chỉ cần thêm tùy chọn đổi cũ lấy mới khi bạn chọn sản phẩm mới. Sau khi đã nhận được và xác minh thiết bị của bạn, chúng tôi sẽ áp dụng giá trị phiên bản hiện tại của bạn vào phương thức thanh toán bạn chọn. Có áp dụng các điều khoản</p>
+                                    </div>
+                                </li>
+                                <li class="gallery-item-1">
+                                    <div class="icon-card myDiv">
+                                        <div class="card-1" tabindex="-1">
+                                            <div class="card-modifier-1">
+                                                <div class="card-viewport-content">
+                                                    <div class="icon-card-container">
+                                                        <div class="icon-container">
+                                                            <img src="./image/icon_customize.png" alt="applr_card">
+                                                        </div>
+                                                        <div class="copy-container">
+                                                            <h3 class="typo-card-headline">Tùy chỉnh máy Mac của bạn.</h3>
+                                                            <p class="family-paragraph"><font _mstmutation="1">Chọn chip, bộ nhớ, dung lượng và cả màu sắc.</font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myModal" class="myModal modal">
+                                        <span class="close2">&times;</span> 
+                                        <h3 class="modal-topic-label">Giá Trị Cốt Lõi Apple</h3>
+                                        <p class="modal-headline">Chọn chip, bộ nhớ, dung lượng lưu trữ và cả màu sắc.</p>
+                                        <p class="modal-headline-1">Dựng một máy Mac phù hợp nhất với bạn. Khi mua trực tuyến tại Apple, bạn có thể tùy chỉnh máy Mac theo cách bạn muốn. Dù là cần một con chip mạnh hơn, thêm bộ nhớ hay dung lượng lưu trữ, bạn có thể tùy chỉnh mọi máy Mac mới cho phù hợp với nhu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="gallery-item-1">
+                                    <div class="icon-card myDiv">
+                                        <div class="card-1" tabindex="-1">
+                                            <div class="card-modifier-1">
+                                                <div class="card-viewport-content">
+                                                    <div class="icon-card-container">
+                                                        <div class="icon-container">
+                                                            <img src="./image/icon_delivery.png" alt="applr_card">
+                                                        </div>
+                                                        <div class="copy-container">
+                                                            <h3 class="typo-card-headline">Giao hàng miễn phí tất cả các ngày trong tuần.</h3>
+                                                            <p class="family-paragraph"><font _mstmutation="1">Chỉ áp dụng các thành phố Hồ Chí Minh, Hà Nội, Đà Nẵng, Nha Trang, Hải Phòng.</font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myModal" class="myModal modal">
+                                        <span class="close2">&times;</span> 
+                                        <h3 class="modal-topic-label">Giao hàng tiêu chuẩn miễn phí</h3>
+                                        <p class="modal-headline">Từ cửa hàng đến địa chỉ của bạn, giao hàng luôn miễn phí.</p>
+                                    </div>
+                                </li>
+                                <li class="gallery-item-1">
+                                    <div class="icon-card myDiv">
+                                        <div class="card-1" tabindex="-1">
+                                            <div class="card-modifier-1">
+                                                <div class="card-viewport-content">
+                                                    <div class="icon-card-container">
+                                                        <div class="icon-container">
+                                                            <img src="./image/icon_specialist_alt.png" alt="applr_card">
+                                                        </div>
+                                                        <div class="copy-container">
+                                                            <h3 class="typo-card-headline">Mua sắm cùng chuyên gia Mac.</h3>
+                                                            <p class="family-paragraph"><font _mstmutation="1">Mua sắm trực tiếp và trực tuyến với chuyên gia.</font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myModal" class="myModal modal">
+                                        <span class="close2">&times;</span> 
+                                        <h3 class="modal-topic-label">Mua sắm trực tiếp với Chuyên Gia trực tuyến</h3>
+                                        <p class="modal-headline">Nhận hỗ trợ để tìm thiết bị phù hợp với bạn.</p>
+                                        <p class="modal-headline-1">Mua sắm trực tiếp với Chuyên Gia trực tuyến.</p>
+                                    </div>
+                                </li>
+                                <li class="gallery-item-1">
+                                    <div class="icon-card  myDiv">
+                                        <div class="card-1" tabindex="-1">
+                                            <div class="card-modifier-1">
+                                                <div class="card-viewport-content">
+                                                    <div class="icon-card-container">
+                                                        <div class="icon-container">
+                                                            <img src="./image/icon_asa.png" alt="applr_card">
+                                                        </div>
+                                                        <div class="copy-container">
+                                                            <h3 class="typo-card-headline">Khám phá trải nghiệm mua sắm được thiết kế dành cho bạn.</h3>
+                                                            <p class="family-paragraph"><font _mstmutation="1">Sử dụng Apple Store để có phương thức mua sắm cá nhân hơn.</font>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myModal" class="myModal modal">
+                                        <span class="close2">&times;</span> 
+                                        <h3 class="modal-topic-label">Ứng dụng Apple Store</h3>
+                                        <p class="modal-headline">Mua sắm trong ứng dụng Apple Store được thiết kế riêng cho bạn.</p>
+                                        <p class="modal-headline-1">Nhận các đề xuất sản phẩm được cá nhân hóa, so sánh các phiên bản, tìm các lựa chọn thanh toán linh hoạt, theo dõi đơn đặt hàng của bạn và hơn thế nữa.</p>
+                                        <p class="modal-headline-1">Quét mã QR để bắt đầu.</p>
+                                        <img id="img03" src="./image/boc_qr_code.jpg" alt="mac_security">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-content-res">
+                    <header class="section-header">
+                        <h2 class="section-header-headline">Nửa kia hoàn hảo.</h2>
+                    </header>
+                    <div class="accor-wrapper">
+                        <ul class="accordion">
+                            <li class="accordion-item">
+                                <h3 class="accordion-title">
+                                    <span class="accordion-title-text">Mac và iPhone</span>
+                                </h3>
+                                <div class="accordion-tray">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content-text">
+                                            <p class="accordion-para-text">
+                                                Bạn có thể trả lời cuộc gọi hoặc tin nhắn từ iPhone ngay trên Mac. Sao chép hình ảnh, video hoặc văn bản trên iPhone, sau đó dán vào một ứng dụng khác trên máy Mac của bạn ở gần đó. Với iCloud, bạn có thể truy cập những tập tin mình yêu thích từ iPhone hoặc Mac. Và hơn thế nữa.
+                                            </p>
+                                        </div>
+                                    <div class="image-container">
+                                        <img src="./image/world_mac_iphone.jpg" alt="mac_iphone" height="230px" width="450px">
+                                    </div>    
+                                </div>
+
+                            </li>
+                            <li class="accordion-item">
+                                <h3 class="accordion-title">
+                                    <span class="accordion-title-text">Mac và iPad</span>
+                                </h3>
+                                <div class="accordion-tray">
+                                    <div class="accordion-content">
+                                        <div class="image-container">
+                                            <img src="./image/world_mac_ipad.jpg" alt="mac_iphone" height="230px" width="450px">
+                                        </div> 
+                                        <div class="accordion-content-text">
+                                            <p class="accordion-para-text">
+                                                Phác thảo trên iPad và bản vẽ xuất hiện ngay trên Mac của bạn. Hoặc sử dụng iPad của bạn làm màn hình thứ hai, nhờ đó bạn có thể làm việc trên một màn hình trong khi bạn dùng màn hình còn lại để tham khảo. Bạn thậm chí còn có thể bắt đầu một dự án Final Cut Pro trên iPad và tiếp tục hoàn thiện trên Mac.
+                                            </p>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h3 class="accordion-title">
+                                    <span class="accordion-title-text">Mac và Apple Watch</span>
+                                </h3>
+                                <div class="accordion-tray">
+                                    <div class="accordion-content">
+                                        <div class="accordion-content-text">
+                                            <p class="accordion-para-text">
+                                                Tự động đăng nhập vào máy Mac của bạn khi bạn đang đeo Apple Watch với tính năng Tự Động Mở Khóa. Không cần gõ mật khẩu.
+                                            </p>
+                                        </div>
+                                        <div class="image-container">
+                                            <img src="./image/world_mac_watch.jpg" alt="mac_iphone" height="230px" width="450px">
+                                        </div>    
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+        <footer>
+            <div class="end1">
+              <div class=" box">
+                <div class="part part1">
+                  <span class="label">Mua Sắm Và Tìm Hiểu</span>
+                  <ul>
+                    <li>
+                      <a href="#">Cửa Hàng</a>
+                    </li>
+                    <li>
+                      <a href="#">Mac</a>
+                    </li>
+                    <li>
+                      <a href="#">iPad</a>
+                    </li>
+                    <li>
+                      <a href="#">iPhone</a>
+                    </li>
+                    <li>
+                      <a href="#">Watch</a>
+                    </li>
+                    <li>
+                      <a href="#">AirPods</a>
+                    </li>
+                    <li>
+                      <a href="#">TV & Nhà</a>
+                    </li>
+                    <li>
+                      <a href="#">AirTag</a>
+                    </li>
+                    <li>
+                      <a href="#">Phụ Kiện</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Ví Apple</span>
+                  <ul>
+                    <li>
+                      <a href="#">Ví</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Pay</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box">
+                <div class="part part1">
+                  <span class="label">Tài Khoản</span>
+                  <ul>
+                    <li>
+                      <a href="#">Quản Lý ID Apple Của Bạn</a>
+                    </li>
+                    <li>
+                      <a href="#">Tài Khoản Apple Store</a>
+                    </li>
+                    <li>
+                      <a href="#">iCloud.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Giải Trí</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple One</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple TV+</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Music</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Arcade</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Podcasts</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Books</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box">
+                <div class="part part1">
+                  <span class="label">Apple Store</span>
+                  <ul>
+                    <li>
+                      <a href="#">Ứng Dụng Apple Store</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Trade In</a>
+                    </li>
+                    <li>
+                      <a href="#">Tài Chính</a>
+                    </li>
+                    <li>
+                      <a href="#">Tình Trạng Đơn Hàng</a>
+                    </li>
+                    <li>
+                      <a href="#">Hỗ Trợ Mua Hàng</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box">
+                <div class="part part1">
+                  <span class="label">Dành Cho Doanh Nghiệp</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple Và Doanh Nghiệp</a>
+                    </li>
+                    <li>
+                      <a href="#">Mua Hàng Cho Doanh Nghiệp</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Cho Giáo Dục</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple Và Giáo Dục</a>
+                    </li>
+                    <li>
+                      <a href="#">Mua Hàng Cho Bậc Đại Học</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part3">
+                  <span class="label">Cho Chăm Sóc Sức Khỏe</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple Trong Chăm Sóc Sức Khỏe</a>
+                    </li>
+                    <li>
+                      <a href="#">Sức Khỏe Trên Apple Watch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box">
+                <div class="part part1">
+                  <span class="label">Giá Trị Cốt Lõi Của Apple</span>
+                  <ul>
+                    <li>
+                      <a href="#">Trợ Năng</a>
+                    </li>
+                    <li>
+                      <a href="#">Môi Trường</a>
+                    </li>
+                    <li>
+                      <a href="#">Quyền Riêng Tư</a>
+                    </li>
+                    <li>
+                      <a href="#">Chuỗi Cung Ứng</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Về Apple</span>
+                  <ul>
+                    <li>
+                      <a href="#">Newsroom</a>
+                    </li>
+                    <li>
+                      <a href="#">Lãnh Đạo Của Apple</a>
+                    </li>
+                    <li>
+                      <a href="#">Nhà Đầu Tư</a>
+                    </li>
+                    <li>
+                      <a href="#">Đạo Đức & Quy Tắc</a>
+                    </li>
+                    <li>
+                      <a href="#">Sự Kiện</a>
+                    </li>
+                    <li>
+                      <a href="#">Liên Hệ Apple</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <p class="end2">Xem thêm cách để mua hàng: <a href="#">Tìm cửa hàng bán lẻ</a> gần bạn. Hoặc gọi 1800 1192.</p>
+    
+            <div class="end3">
+              <div>
+                <p>Bản quyền © Apple Inc. 2024 Bảo lưu mọi quyền.</p>
+                <a href="#">Việt Nam</a>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Chính Sách Quyền Riêng Tư</a>
+                </li>
+                <li>
+                  <a href="#">Điều Khoản Sử Dụng</a>
+                </li>
+                <li>
+                  <a href="#">Pháp Lý</a>
+                </li>
+                <li>
+                  <a href="#">Bán Hàng Và Hoàn Tiền</a>
+                </li>
+                <li>
+                  <a href="#">Bản Đồ Trang Web</a>
+                </li>
+              </ul>
+            </div>
+        </footer>
+        <div class="gototop">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+
+        <script src="./all.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+        <script src="./global.js"></script>
+    </body>
+</html>

@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Macbook Pro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <html lang="en"></html>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./mac.css" />
+    <link rel="stylesheet" type="text/css" href="./macBook_pro.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="navigation">
+          <a href="./index.html" class="navigation__logo"
+            ><svg
+              height="44"
+              viewBox="0 0 14 44"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"
+              ></path>
+            </svg>
+          </a>
+          <div class="dropdown">
+            <a href="./index.html" class="navigation__tag">Cửa hàng</a>
+          </div>
+          <div class="dropdown">
+            <a href="./mac.html" class="navigation__tag">Mac</a>
+              <div class="dropdown-content">
+                <div class="box">
+                    <span class="label">Khám phá Mac</span>
+                    <a href="./mac.html">Khám phá tất cả Mac</a>
+                    <a href="./macBook_pro.html">Khám phá tất cả MacBook Pro</a>
+                    <a href="./macBook_air.html">Khám phá tất cả MacBook Air</a>
+                    <a href="./imac.html">Khám phá tất cả iMac</a>
+                </div>
+                <div class="box">
+                  <span class="label">Mua Mac</span>
+                  <a href="./buy.html" onclick="selectedType('mac')" >Mua iPad</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./index.html" class="navigation__tag">iPad</a>
+              <div class="dropdown-content">
+                <div class="box">
+                    <span class="label">Khám phá iPad</span>
+                    <a href="./index.html">Khám phá tất cả iPad</a>
+                </div>
+                <div class="box">
+                  <span class="label">Mua iPad</span>
+                  <a href="./buy.html" onclick="selectedType('ipad')" >Mua iPad</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+                  <a href="./iphone.html" class="navigation__tag">iPhone</a>
+              <div class="dropdown-content">
+                <div class="box">
+                    <span class="label">Khám phá iPhone</span>
+                    <a href="./iphone.html">Khám phá tất cả iPhone</a>
+                    <a href="./iphone_se.html">Khám phá tất cả iPhone SE</a>
+                    <a href="./iphone13.html">Khám phá tất cả iPhone 13</a>
+                    <a href="./iphone14.html">Khám phá tất cả iPhone 14</a>
+                    <a href="./iphone15.html">Khám phá tất cả iPhone 15</a>
+                    <a href="./iphone15_pro.html">Khám phá tất cả iPhone 15 Pro</a>
+                </div>
+                <div class="box">
+                  <span class="label">Mua iPhone</span>
+                  <a href="./buy.html" onclick="selectedType('iphone')" >Mua iPhone</a>
+              </div>
+            </div>
+          </div>
+          <a href="./cart.html" class="navigation__logo cart hidden"><svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m13.4575 16.9268h-1.1353a3.8394 3.8394 0 0 0 -7.6444 0h-1.1353a2.6032 2.6032 0 0 0 -2.6 2.6v8.9232a2.6032 2.6032 0 0 0 2.6 2.6h9.915a2.6032 2.6032 0 0 0 2.6-2.6v-8.9231a2.6032 2.6032 0 0 0 -2.6-2.6001zm-4.9575-2.2768a2.658 2.658 0 0 1 2.6221 2.2764h-5.2442a2.658 2.658 0 0 1 2.6221-2.2764zm6.3574 13.8a1.4014 1.4014 0 0 1 -1.4 1.4h-9.9149a1.4014 1.4014 0 0 1 -1.4-1.4v-8.9231a1.4014 1.4014 0 0 1 1.4-1.4h9.915a1.4014 1.4014 0 0 1 1.4 1.4z"></path></svg></a>
+          <div class="authentication">
+  
+          </div>
+  
+        </nav>
+  </nav>
+      </header>
+
+      <nav id="menunav">
+        <div class="menu2">
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a href="macBook_air.html">
+                <img
+                  src="./image/macbookAir.svg"
+                  alt="macAir"
+                  class="menunav-icon"
+                />
+                <span class="menunav-label">MacBook Air</span>
+                <span class="menunav-new">Mới</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="macBook_pro.html">
+                <img
+                  src="./image/macbookPro.svg"
+                  alt="macbookPro"
+                  class="menunav-icon"
+                />
+                <span class="menunav-label">MacBook Pro</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="imac.html">
+                <img src="./image/imac.svg" alt="iMac" class="menunav-icon" />
+                <span class="menunav-label">iMac</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="macMini.html">
+                <img
+                  src="./image/macMini.svg"
+                  alt="macMini"
+                  class="menunav-icon"
+                  height="80px"
+                  width="50px"
+                />
+                <span class="menunav-label">Mac mini</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="macStudio.html">
+                <img
+                  src="./image/macStudio.svg"
+                  alt="macStudio"
+                  class="menunav-icon"
+                  height="80px"
+                  width="50px"
+                />
+                <span class="menunav-label">Mac Studio</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="macPro.html">
+                <img
+                  src="./image/macPro.svg"
+                  alt="macPro"
+                  class="menunav-icon"
+                  height="100px"
+                  width="50px"
+                />
+                <span class="menunav-label">Mac Pro</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <div class="welcome">
+          <h1 class="eyebrow-super">MacBook Pro</h1>
+          <h2 class="headline-elevated">
+            Chấn động.
+            <br />
+            Ấn tượng.
+          </h2>
+        </div>
+        <div class="hero-image">
+          <img
+            id="img03"
+            src="./image/welcome_hero_endframe.jpg"
+            alt="macbookAir"
+            height="100%"
+            width="100%"
+          />
+        </div>
+        <div class="dynamic-content-upgrade">
+          Từ 39.999.000đ hoặc 1.629.000đ/tháng trong 24 tháng
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cards">
+      <div class="scroll-container">
+        <div class="item-container">
+          <ul class="card-set">
+            <li class="gallery-item">
+              <div class="feature-card myDiv">
+                <div class="card" tabindex="-1">
+                  <div class="card-modifier">
+                    <div class="card-viewport-content">
+                      <div class="feature-card-content">
+                        <div class="feature-card-copy">
+                          <p class="card-headline">
+                            Những con chip tiên tiến nhất từng
+                            <br />
+                            được thiết kế cho máy tính có nhân.
+                          </p>
+                        </div>
+                        <figure class="feature-card-image">
+                          <picture class="overview-consider-mac-hello">
+                            <img
+                              src="./image/highlights_chips_endframe.jpg"
+                              alt="mac_hello"
+                              media="max-width:734px"
+                            />
+                          </picture>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <div class="feature-card myDiv">
+                <div class="card" tabindex="-1">
+                  <div class="card-modifier">
+                    <div class="card-viewport-content">
+                      <div class="feature-card-content">
+                        <div class="feature-card-copy">
+                          <p class="card-headline">
+                            Thời lượng pin lên đến 22 giờ cho khả
+                            <br />
+                            năng linh động chuyên nghiệp cực đỉnh.
+                          </p>
+                        </div>
+                        <figure class="feature-card-image">
+                          <picture class="overview-consider-mac-hello">
+                            <img
+                              src="./image/highlights_battery.jpg"
+                              alt="mac_hello"
+                              media="max-width:734px"
+                            />
+                          </picture>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <div class="feature-card myDiv">
+                <div class="card" tabindex="-1">
+                  <div class="card-modifier">
+                    <div class="card-viewport-content">
+                      <div class="feature-card-content">
+                        <div class="feature-card-copy">
+                          <p class="card-headline">
+                            Màn hình máy tính xách tay
+                            <br />
+                            cực đỉnh. Xuất sắc trên
+                            <br />
+                            mọi phương diên.
+                          </p>
+                        </div>
+                        <figure class="feature-card-image">
+                          <picture class="overview-consider-mac-hello">
+                            <img
+                              src="./image/highlights_display_endframe.jpg"
+                              alt="mac_hello"
+                              media="max-width:734px"
+                            />
+                          </picture>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <div class="feature-card myDiv">
+                <div class="card" tabindex="-1">
+                  <div class="card-modifier">
+                    <div class="card-viewport-content">
+                      <div class="feature-card-content">
+                        <div class="feature-card-copy">
+                          <p class="card-headline">
+                            Một chiếc máy tính xách tay pro vô song.
+                            <br />
+                            Nay trong màu sách mới: Đen Không Gian.
+                          </p>
+                        </div>
+                        <figure class="feature-card-image">
+                          <picture class="overview-consider-mac-hello">
+                            <img
+                              src="./image/highlights_space_black_endframe.jpg"
+                              alt="mac_hello"
+                              media="max-width:734px"
+                            />
+                          </picture>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-content">
+        <div class="article-header">
+          <h2 class="article-headline-1">Khám phá tất cả.</h2>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <h1 class="hero-headline">Ba cú nhảy vọt</h1>
+        <p class="typo-hero-copy">
+          <span class="hero-copy-element">
+            MacBook Pro chạy cực nhanh với chip M3, M3 Pro và M3 Max. Được thiết
+            kế trên
+            <em>công nghệ 3 nanomet</em>
+            và sở hữu
+            <em>kiến trúc GPU hoàn toàn mới</em>
+            ,đây là dòng chip tiên tiến nhất từng thiết kế cho máy tính cá nhân.
+            Và mỗi mẫu chip trong đó
+            <em
+              >đều mang đến nhiều tính năng và hiệu năng chuyên nghiệp hơn.</em
+            >
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="subsection-gallery-container">
+      <div class="scroll-gallery-container">
+        <div id="scroll-gallery-hero">
+          <div class="scroll-container scroll-contain-upgrade">
+            <div class="item-container">
+              <div class="gallery-item gallery-item-upgrade">
+                <picture id="performance-mx-1">
+                  <img
+                    src="./image/mx__7nkrkdxhdzma_medium.jpg"
+                    alt="performance_mx_1"
+                  />
+                </picture>
+                <div class="chip-hero-plus">
+                  <div class="chip-hero-plus-item-1">
+                    <p class="stat">
+                      CPU
+                      <br />
+                      8 lõi
+                    </p>
+                  </div>
+                  <div class="chip-hero-plus-item-1">
+                    <p class="stat">
+                      GPU
+                      <br />
+                      10 lõi
+                    </p>
+                  </div>
+                  <div class="chip-hero-plus-item-1">
+                    <p class="stat">
+                      Bộ nhớ thống nhất
+                      <br />
+                      lên đến 24GB
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item gallery-item-upgrade">
+                <picture id="performance-mx-1">
+                  <img
+                    src="./image/mx_pro__4183istr5f6u_medium.jpg"
+                    alt="performance_mx_1"
+                  />
+                </picture>
+                <div class="chip-hero-plus">
+                  <div class="chip-hero-plus-item-2">
+                    <p class="stat">
+                      CPU lên đến
+                      <br />
+                      12 lõi
+                    </p>
+                  </div>
+                  <div class="chip-hero-plus-item-2">
+                    <p class="stat">
+                      GPU
+                      <br />
+                      18 lõi
+                    </p>
+                  </div>
+                  <div class="chip-hero-plus-item-2">
+                    <p class="stat">
+                      Bộ nhớ thống nhất
+                      <br />
+                      lên đến 36GB
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-item gallery-item-upgrade">
+                <picture id="performance-mx-1">
+                  <img
+                    src="./image/mx_max__fbgblbhbf6ai_medium.jpg"
+                    alt="performance_mx_1"
+                  />
+                </picture>
+                <div class="chip-hero-plus">
+                  <div class="chip-hero-plus-item-3">
+                    <p class="stat">
+                      CPU lên đến
+                      <br />
+                      16 lõi
+                    </p>
+                  </div>
+                  <div class="chip-hero-plus-item-3">
+                    <p class="stat">
+                      GPU
+                      <br />
+                      40 lõi
+                    </p>
+                  </div>
+                  <div class="chip-hero-plus-item-3">
+                    <p class="stat">
+                      Bộ nhớ thống nhất
+                      <br />
+                      lên đến 128GB
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="section">
+        <div class="hero-copy">
+          <h1 class="hero-headline">
+            Hiệu năng đồ họa
+            <br />
+            thay đổi cuộc chơi.
+          </h1>
+        </div>
+      </div>
+      <div class="subsection-overflow">
+        <div class="subsection-gpu">
+          <picture class="performance-hw-1 screen-0">
+            <img
+              src="./image/performance_hw__cnfchyuncvyq_large.jpg"
+              alt="anh1"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-1">
+            <img
+              src="./image/performance_screen_vfx__fuih4qnrfzqu_large.png"
+              alt="anh2"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-2">
+            <img
+              src="./image/performance_screen_keynote__egc30p8vup4y_large.png"
+              alt="anh3"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-3">
+            <img
+              src="./image/performance_screen_davinci__glp3kgao746e_large.png"
+              alt="anh4"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-4">
+            <img
+              src="./image/performance_screen_houdini__co78thvg7cwi_large.png"
+              alt="anh5"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-5">
+            <img
+              src="./image/performance_screen_sketchup__gllzwsg4bc2m_large.png"
+              alt="anh6"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-6">
+            <img
+              src="./image/performance_screen_maya__ckbkyvr4snte_large.png"
+              alt="anh7"
+            />
+          </picture>
+          <picture class="performance-hw-1 screen screen-7">
+            <img
+              src="./image/performance_screen_photoshop__glgzm3fsu3qu_large.png"
+              alt="anh8"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="typo-hero-copy">
+          <span class="hero-copy-element">
+            Chiêm ngưỡng kiến trúc GPU đẳng cấp hoàn toàn mới. Và
+            <em>đột phá lớn nhất từng có trong lĩnh vực đồ họa</em>
+            trên chip Apple silicon.
+          </span>
+          <br />
+          <span class="hero-copy-element">
+            Dynamic Caching tối ưu bộ nhớ trên chip tốc độ cao để tăng đáng kể
+            mức sử dụng GPU trung bình, qua đó
+            <em>tăng mạnh hiệu năng</em>
+            để đáp ứng các game và ứng dụng chuyên nghiệp phức tạp nhất.
+          </span>
+          <br />
+          <span class="hero-copy-element">
+            <em>Các game sẽ trông chi tiết hơn bao giờ hết</em>
+            nhờ vào công nghệ đổ bóng dạng lưới tốc độ cao bằng phần cứng. Công
+            nghệ này mang lại khả năng và hiệu quả cao hơn cho tiến trình xử lý
+            hình học, cho phép
+            <em>game kết xuất các cảnh phức tạp hơn.</em>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="subsection">
+      <div class="section">
+        <div class="hero-copy">
+          <h1 class="hero-headline">
+            Công nghệ dò tốc độ
+            <br />
+            cao bằng phần cứng.
+          </h1>
+          <p class="typo-hero-copy">
+            <span class="hero-copy-element">
+              Lần đầu tiên, MacBook Pro trang bị công nghệ dò tia tốc độ cao
+              bằng phần cứng. Kết hợp với kiến trúc đồ họa mới, máy hỗ trợ các
+              ứng dụng chuyên nghiệp mang đến
+              <em>hiệu năng kết xuất nhanh hơn đến 2,5 lần</em>
+              và giúp các trò chơi hiển thị
+              <em>vùng tối và phản chiếu chân thực hơn.</em>
+            </span>
+          </p>
+        </div>
+        <div class="section-1">
+          <div class="subsection-video-1">
+            <div class="img-copy">
+              <picture class="picture-copy">
+                <img
+                  src="./image/mbp_16_hw__cqlhn5ys0o9y_medium.jpg"
+                  alt="highlights_speed_endframe"
+                />
+              </picture>
+            </div>
+            <div class="subsection-overflow-copy">
+              <video class="large videoElement" muted>
+                <source src="./image/large.mp4" type="video/mp4" />
+              </video>
+              <button id="replayButton" style="display: none"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-1">
+        <div class="hero-copy-1">
+          <ul class="section-cpu">
+            <li>
+              <p class="typo-hero-copy">
+                <span class="hero-copy-element"> Hiệu năng đa luồng </span>
+              </p>
+              <h1 class="hero-headline">CPU nhanh hơn 80%</h1>
+              <p class="typo-hero-copy">
+                <span class="hero-copy-element">
+                  so với MacBook Pro 16 inch với M1 Max
+                  <br />
+                  <br />
+                  <br />
+                  Các lõi CPU thế hệ mới
+                  <em>mang lại trải nghiệm siêu nhanh</em>
+                  mà vẫn đuy trì khả năng tiết kiệm điện đáng kinh ngạc.
+                </span>
+              </p>
+            </li>
+            <li>
+              <p class="typo-hero-copy">
+                <span class="hero-copy-element"> Hơn </span>
+              </p>
+              <h1 class="hero-headline">18 nghìn tỷ phép tính</h1>
+              <p class="typo-hero-copy">
+                <span class="hero-copy-element">
+                  mỗi giây
+                  <br />
+                  <br />
+                  <br />
+                  Neural Engine 16 lõi cải tiến
+                  <em>tăng tốc cho các mô hình máy học phổ biến.</em>
+                  Các công cụ xử lý hình ảnh như DeNoise AI và Gigapixel AI từ
+                  Topaz hoạt động nhanh hơn nữa.
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="subsection">
+      <div class="section">
+        <div class="hero-copy">
+          <h1 class="hero-headline">Hết ngày dài lại đêm hâu.</h1>
+          <p class="typo-hero-copy">
+            <span class="hero-copy-element">
+              MacBook Pro có
+              <em>thời lượng pin lâu nhất trong dòng máy Mac</em>
+              — lên đến 22 giờ. Khả năng tiết kiệm điện chính là phép màu của
+              Apple silicon. Và tất cả phiên bản đều chạy nhanh ổn định dù đang
+              cắm sạc hay không. Vì vậy, bất cứ nơi nào cảm hứng tuôn trào hay
+              bất cứ khi nào công việc vẫy gọi, hãy đáp lời.
+            </span>
+          </p>
+        </div>
+        <div class="section-1">
+          <div class="subsection-video-1">
+            <div class="img-copy">
+              <picture class="picture-copy">
+                <img
+                  src="./image/mbp_16_hw__cqlhn5ys0o9y_medium.jpg"
+                  alt="highlights_speed_endframe"
+                />
+              </picture>
+            </div>
+            <div class="subsection-overflow-copy">
+              <video class="videoElement" muted>
+                <source src="./image/large-1.mp4" type="video/mp4" />
+              </video>
+              <button id="replayButton" style="display: none"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-1">
+        <div class="hero-copy-1">
+          <ul class="section-cpu">
+            <li>
+              <p class="typo-hero-copy">
+                <span class="hero-copy-element">
+                  Thời gian xem video lên đến
+                </span>
+              </p>
+              <br />
+              <h1 class="hero-headline">22 giờ</h1>
+            </li>
+            <li>
+              <p class="typo-hero-copy">
+                <span class="hero-copy-element">
+                  Thời gian duyệt web trên mạng lên đến
+                </span>
+              </p>
+              <br />
+              <h1 class="hero-headline">15 giờ</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="subsection subsection-3">
+      <div class="section">
+        <div class="hero-copy">
+          <h1 class="hero-headline">
+            <br /><br />
+            Màn hình tốt nhất
+            <br />
+            từng có trên một
+            <br />
+            máy tính xách tay.
+          </h1>
+        </div>
+        <div class="section-2">
+          <video class="videoElement" muted>
+            <source src="./image/large-2.mp4" type="video/mp4" />
+          </video>
+          <button id="replayButton" style="display: none"></button>
+        </div>
+        <div class="hero-copy">
+          <p class="typo-hero-copy">
+            <span class="hero-copy-element">
+              <br /><br />
+              <em>Extreme Dynamic Range</em>
+              (XDR) mang lại những vùng sáng lung linh tinh tế nhất, vùng tối
+              chi tiết đáng kinh ngạc và màu sắc rực rỡ chân thực hơn bao giờ
+              hết. Được hiệu chỉnh tại nhà máy, mỗi màn hình Liquid Retina XDR
+              đều có
+              <em>ProMotion và các chế độ tham chiếu chuyên nghiệp.</em>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-2">
+          <video class="videoElement videoElement1" muted>
+            <source src="./image/large-3.mp4" type="video/mp4" />
+          </video>
+          <button id="replayButton" style="display: none"></button>
+        </div>
+        <div class="hero-1">
+          <div class="hero-copy-1">
+            <ul class="section-cpu">
+              <li>
+                <p class="typo-hero-copy">
+                  <span class="hero-copy-element">
+                    <em>10.000 đèn LED mini</em>
+                    được nhóm lại để mang lại độ sáng và độ tương phản chính
+                    xác.
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p class="typo-hero-copy">
+                  <span class="hero-copy-element">
+                    <em>Các tấm phim quang học tùy chỉnh và bộ khuếch tán</em>
+                    kết hợp và định hình ánh sáng hiệu quả.
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p class="typo-hero-copy">
+                  <span class="hero-copy-element">
+                    <em>Tấm nền LCD</em>
+                    hỗ trợ tốc độ làm mới lên đến 120Hz.
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="end1">
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Mua Sắm Và Tìm Hiểu</span>
+              <ul>
+                <li>
+                  <a href="#">Cửa Hàng</a>
+                </li>
+                <li>
+                  <a href="#">Mac</a>
+                </li>
+                <li>
+                  <a href="#">iPad</a>
+                </li>
+                <li>
+                  <a href="#">iPhone</a>
+                </li>
+                <li>
+                  <a href="#">Watch</a>
+                </li>
+                <li>
+                  <a href="#">AirPods</a>
+                </li>
+                <li>
+                  <a href="#">TV & Nhà</a>
+                </li>
+                <li>
+                  <a href="#">AirTag</a>
+                </li>
+                <li>
+                  <a href="#">Phụ Kiện</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Ví Apple</span>
+              <ul>
+                <li>
+                  <a href="#">Ví</a>
+                </li>
+                <li>
+                  <a href="#">Apple Pay</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Tài Khoản</span>
+              <ul>
+                <li>
+                  <a href="#">Quản Lý ID Apple Của Bạn</a>
+                </li>
+                <li>
+                  <a href="#">Tài Khoản Apple Store</a>
+                </li>
+                <li>
+                  <a href="#">iCloud.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Giải Trí</span>
+              <ul>
+                <li>
+                  <a href="#">Apple One</a>
+                </li>
+                <li>
+                  <a href="#">Apple TV+</a>
+                </li>
+                <li>
+                  <a href="#">Apple Music</a>
+                </li>
+                <li>
+                  <a href="#">Apple Arcade</a>
+                </li>
+                <li>
+                  <a href="#">Apple Podcasts</a>
+                </li>
+                <li>
+                  <a href="#">Apple Books</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Apple Store</span>
+              <ul>
+                <li>
+                  <a href="#">Ứng Dụng Apple Store</a>
+                </li>
+                <li>
+                  <a href="#">Apple Trade In</a>
+                </li>
+                <li>
+                  <a href="#">Tài Chính</a>
+                </li>
+                <li>
+                  <a href="#">Tình Trạng Đơn Hàng</a>
+                </li>
+                <li>
+                  <a href="#">Hỗ Trợ Mua Hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" box">
+            <div class="part part1">
+              <span class="label">Dành Cho Doanh Nghiệp</span>
+              <ul>
+                <li>
+                  <a href="#">Apple Và Doanh Nghiệp</a>
+                </li>
+                <li>
+                  <a href="#">Mua Hàng Cho Doanh Nghiệp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Cho Giáo Dục</span>
+              <ul>
+                <li>
+                  <a href="#">Apple Và Giáo Dục</a>
+                </li>
+                <li>
+                  <a href="#">Mua Hàng Cho Bậc Đại Học</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part3">
+              <span class="label">Cho Chăm Sóc Sức Khỏe</span>
+              <ul>
+                <li>
+                  <a href="#">Apple Trong Chăm Sóc Sức Khỏe</a>
+                </li>
+                <li>
+                  <a href="#">Sức Khỏe Trên Apple Watch</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="part part1">
+              <span class="label">Giá Trị Cốt Lõi Của Apple</span>
+              <ul>
+                <li>
+                  <a href="#">Trợ Năng</a>
+                </li>
+                <li>
+                  <a href="#">Môi Trường</a>
+                </li>
+                <li>
+                  <a href="#">Quyền Riêng Tư</a>
+                </li>
+                <li>
+                  <a href="#">Chuỗi Cung Ứng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="part part2">
+              <span class="label">Về Apple</span>
+              <ul>
+                <li>
+                  <a href="#">Newsroom</a>
+                </li>
+                <li>
+                  <a href="#">Lãnh Đạo Của Apple</a>
+                </li>
+                <li>
+                  <a href="#">Nhà Đầu Tư</a>
+                </li>
+                <li>
+                  <a href="#">Đạo Đức & Quy Tắc</a>
+                </li>
+                <li>
+                  <a href="#">Sự Kiện</a>
+                </li>
+                <li>
+                  <a href="#">Liên Hệ Apple</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="end2">Xem thêm cách để mua hàng: <a href="#">Tìm cửa hàng bán lẻ</a> gần bạn. Hoặc gọi 1800 1192.</p>
+
+        <div class="end3">
+          <div>
+            <p>Bản quyền © Apple Inc. 2024 Bảo lưu mọi quyền.</p>
+            <a href="#">Việt Nam</a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Chính Sách Quyền Riêng Tư</a>
+            </li>
+            <li>
+              <a href="#">Điều Khoản Sử Dụng</a>
+            </li>
+            <li>
+              <a href="#">Pháp Lý</a>
+            </li>
+            <li>
+              <a href="#">Bán Hàng Và Hoàn Tiền</a>
+            </li>
+            <li>
+              <a href="#">Bản Đồ Trang Web</a>
+            </li>
+          </ul>
+        </div>
+    </footer>
+    <div class="gototop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="all.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="./global.js"></script>
+  </body>
+</html>

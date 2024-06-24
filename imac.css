@@ -1,0 +1,75 @@
+@import url("fonts.css");
+.videoElement {
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+}
+.flip-type {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#myImg {
+  width: 100%;
+  object-fit: none;
+}
+
+.type-1 {
+  color: #26476d;
+}
+.type-2 {
+  color: #e0901a;
+}
+.type-3 {
+  color: #1d1d1f;
+}
+.type-4 {
+  color: #b62c31;
+}
+.img-container img {
+  max-width: 110%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-headline-2 {
+  font-size: 72px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  color: #1d1d1f;
+}
+.article-headline-3 {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  color: #1d1d1f;
+}
+#gallery-item-1.gallery-item {
+  width: 20vw;
+}

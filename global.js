@@ -25,7 +25,11 @@ if (user == null) {
 } else {
   authenDOM.innerHTML = `      <a href="#" class="navigation__tag">${user.name}</a>
           <a href="./login.html" class="navigation__tag" onclick="logout()">Đăng xuất</a>`;
+  document
+    .querySelector("header .navigation__logo.cart.hidden")
+    .classList.remove("hidden");
 }
+// console.log("hello");
 //Click logout
 function logout() {
   // e.preventDefault();

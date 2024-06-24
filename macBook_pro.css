@@ -1,0 +1,298 @@
+.welcome {
+  text-align: center;
+  margin-top: 38px;
+}
+.eyebrow-super {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.headline-elevated {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.dynamic-content-upgrade {
+  color: #1d1d1f;
+  font-size: 21px;
+  letter-spacing: 0.231px;
+  line-height: 29.001px;
+  text-align: center;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.subsection-content {
+  margin-top: 40px;
+}
+.article-header {
+  margin-bottom: 30px;
+  margin-left: 9vw;
+  margin-right: 15vw;
+}
+.hero-copy {
+  margin-bottom: 99px;
+  margin-left: 19vw;
+  margin-right: 19vw;
+}
+.hero-headline {
+  font-size: 80px;
+  line-height: 84px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  color: #1d1d1f;
+}
+.typo-hero-copy {
+  margin-top: 24px;
+  color: #86868b;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+em {
+  color: #1d1d1f;
+  font-style: normal;
+}
+.gallery-item {
+  list-style-type: none;
+}
+
+.article-headline-1 {
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  color: #86868b;
+}
+.subsection-content {
+  margin-top: 40px;
+}
+
+.scroll-contain-upgrade {
+  overflow-x: hidden !important;
+  margin-left: 13vw;
+  margin-right: 13vw;
+}
+.subsection-gallery-container {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 87.5%;
+}
+#scroll-gallery-hero {
+  padding-bottom: 75px;
+}
+.item-container {
+  --gallery-column-gap: 45px;
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: max-content;
+  grid-auto-flow: column;
+  grid-column-gap: var(--gallery-column-gap);
+  column-gap: var(--gallery-column-gap);
+  grid-row-gap: 0px;
+  row-gap: 0px;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+.gallery-item-upgrade {
+  width: 15vw;
+}
+
+.chip-hero-plus {
+  grid-row-gap: 51px;
+  border-top: none;
+  display: grid;
+  margin-top: 20px;
+}
+.chip-hero-plus-item-1 {
+  color: #43b9b9;
+  font-size: 28px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.chip-hero-plus-item-2 {
+  color: #2997ff;
+  font-size: 28px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.chip-hero-plus-item-3 {
+  color: #a972ff;
+  font-size: 28px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+.subsection-overflow {
+  overflow: hidden;
+}
+.subsection-gpu {
+  left: 50%;
+  --height: 999px;
+  --width: 1730px;
+  position: relative;
+  height: var(--height);
+  width: var(--width);
+  transform: translatex(-50%);
+  margin-left: 7vw;
+}
+.screen-0 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+}
+.screen {
+  top: var(--top-end);
+  left: var(--left-end);
+  position: absolute;
+}
+.screen-1 {
+  --left-end: 105px;
+  --left-start: 418px;
+  --top-end: 05px;
+  --top-start: 89px;
+}
+.screen-2 {
+  --left-end: 767px;
+  --left-start: 516px;
+  --top-end: 77px;
+  --top-start: 68px;
+}
+.screen-3 {
+  --left-end: 1000px;
+  --left-start: 631px;
+  --top-end: -24px;
+  --top-start: 69px;
+}
+.screen-4 {
+  --left-end: -64px;
+  --left-start: 133px;
+  --top-end: 451px;
+  --top-start: 307px;
+}
+.screen-5 {
+  --left-end: 1060px;
+  --left-start: 741px;
+  --top-end: 540px;
+  --top-start: 206px;
+}
+.screen-6 {
+  --left-end: 167px;
+  --left-start: 333px;
+  --top-end: 316px;
+  --top-start: 232px;
+}
+.screen-7 {
+  --left-end: 990px;
+  --left-start: 600px;
+  --top-end: 350px;
+  --top-start: 218px;
+}
+
+.section-1 {
+  margin-left: 19vw;
+  margin-right: 19vw;
+}
+.subsection-video-1 {
+  position: relative;
+  margin-top: 20px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3vw;
+}
+.img-copy {
+  display: block;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+.img-copy img {
+  width: 140%;
+  height: auto;
+  border-radius: 18px;
+}
+.subsection-overflow-copy video {
+  width: 115%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-32%, -55%);
+  z-index: 2;
+}
+
+.hero-1 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.hero-copy-1 {
+  margin-top: 20px;
+  margin-left: 3vw;
+}
+
+.section-cpu {
+  display: flex;
+}
+
+.section-cpu li {
+  flex: 1;
+  flex-basis: 30%;
+  box-sizing: border-box;
+}
+
+.section-cpu li:nth-child(2) {
+  padding-right: 100px;
+  margin-left: 20px;
+}
+.section-cpu li:nth-child(1) {
+  padding-right: 100px;
+}
+
+.section-2 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.large {
+  width: 100%;
+  object-fit: cover;
+}
+.videoElement1 {
+  width: 60vw;
+  height: auto;
+}

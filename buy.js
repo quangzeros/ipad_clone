@@ -50,59 +50,49 @@ function selectedItem(id) {
 renderView();
 
 async function test() {
-  const { error } = await _supabase.from("products").insert();
+  const data = [
+    {
+      name: "MacBook Air",
+      size: [13, 15],
+      price: ["24.999.000", "29.999.000"],
+      img: "./img/home_mac_air.png",
+      color: [
+        { name: "Đêm Xanh Thẳm", hex: "#2e3641" },
+        { name: "Ánh Sao", hex: "#f0e5d2" },
+        { name: "Xám Không Gian", hex: "#7c7e80" },
+        { name: "Bạc", hex: "#e2e4e6" },
+      ],
+      type: "mac",
+    },
+    {
+      name: "MacBook Pro",
+      size: [14, 16],
+      price: ["19.999.000", "22.999.000"],
+      img: "./img/home_mac_pro.png",
+      color: [
+        { name: "Xám Không Gian", hex: "#7d7e80" },
+        { name: "Bạc", hex: "#e2e4e6" },
+      ],
+      type: "mac",
+    },
+    {
+      name: "iMac",
+      size: [24],
+      price: ["36.999.000"],
+      img: "./img/home_imac.png",
+      color: [
+        { name: "Xanh Dương", hex: "#a8bed3" },
+        { name: "Xanh Lá", hex: "#a3beb5" },
+        { name: "Hồng", hex: "#edb9ae" },
+        { name: "Bạc", hex: "#d9dadc" },
+        { name: "Vàng", hex: "#e9ca94" },
+        { name: "Cam", hex: "#e8aa94" },
+        { name: "Tím", hex: "#abacca" },
+      ],
+      type: "mac",
+    },
+  ];
+  const { error } = await _supabase.from("products").insert(data);
 }
-// data = [
-//   {
-//     name: "iPad Pro",
-//     size: [11, 13],
-//     price: ["26.000.000", "28.999.000"],
-//     img: "./img/home_ipad_pro.png",
-//     color: [
-//       { name: "Đen Không Gian", hex: "#494749" },
-//       { name: "Bạc", hex: "#e5e6e7" },
-//     ],
-//     type: "ipad",
-//   },
-//   {
-//     name: "iPad Air",
-//     size: [11, 13],
-//     price: ["13.000.000", "16.999.000"],
-//     img: "./img/home_ipad_air.png",
-//     color: [
-//       { name: "Xám Không Gian", hex: "#79777b" },
-//       { name: "Xanh Dương", hex: "#dae7e8" },
-//       { name: "Tím", hex: "#e3dee9" },
-//       { name: "Ánh Sao", hex: "#e6e1da" },
-//     ],
-//     type: "ipad",
-//   },
-//   {
-//     name: "iPad",
-//     size: [10.9],
-//     price: ["9.999.000"],
-//     img: "./img/home_ipad.png",
-//     color: [
-//       { name: "Xanh Dương", hex: "#6880a3" },
-//       { name: "Vàng", hex: "#f0d966" },
-//       { name: "Hồng", hex: "#de6c7b" },
-//       { name: "Bạc", hex: "#e3e4e5" },
-//     ],
-//     type: "ipad",
-//   },
-//   {
-//     name: "iPad Mini",
-//     size: [8.3],
-//     price: ["13.999.000"],
-//     img: "./img/home_ipad_mini.png",
-//     color: [
-//       { name: "Xám không gian", hex: "#767479" },
-//       { name: "Hồng", hex: "#e8d1cf" },
-//       { name: "Tím", hex: "#bdbcd4" },
-//       { name: "Ánh Sao", hex: "#e5dfd5" },
-//     ],
-//     type: "ipad",
-//   },
-// ];
 
 // test();

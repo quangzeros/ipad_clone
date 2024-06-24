@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iMac</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <html lang="en"></html>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./mac.css">
+        <link rel="stylesheet" type="text/css" href="./macBook_air.css">
+        <link rel="stylesheet" type="text/css" href="./imac.css">
+        <link rel="stylesheet" type="text/css" href="./macBook_pro.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+              <a href="./index.html" class="navigation__logo"
+                ><svg
+                  height="44"
+                  viewBox="0 0 14 44"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"
+                  ></path>
+                </svg>
+              </a>
+              <div class="dropdown">
+                <a href="./index.html" class="navigation__tag">Cửa hàng</a>
+              </div>
+              <div class="dropdown">
+                <a href="./mac.html" class="navigation__tag">Mac</a>
+                  <div class="dropdown-content">
+                    <div class="box">
+                        <span class="label">Khám phá Mac</span>
+                        <a href="./mac.html">Khám phá tất cả Mac</a>
+                        <a href="./macBook_pro.html">Khám phá tất cả MacBook Pro</a>
+                        <a href="./macBook_air.html">Khám phá tất cả MacBook Air</a>
+                        <a href="./imac.html">Khám phá tất cả iMac</a>
+                    </div>
+                    <div class="box">
+                      <span class="label">Mua Mac</span>
+                      <a href="./buy.html" onclick="selectedType('mac')" >Mua iPad</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="./index.html" class="navigation__tag">iPad</a>
+                  <div class="dropdown-content">
+                    <div class="box">
+                        <span class="label">Khám phá iPad</span>
+                        <a href="./index.html">Khám phá tất cả iPad</a>
+                    </div>
+                    <div class="box">
+                      <span class="label">Mua iPad</span>
+                      <a href="./buy.html" onclick="selectedType('ipad')" >Mua iPad</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                      <a href="./iphone.html" class="navigation__tag">iPhone</a>
+                  <div class="dropdown-content">
+                    <div class="box">
+                        <span class="label">Khám phá iPhone</span>
+                        <a href="./iphone.html">Khám phá tất cả iPhone</a>
+                        <a href="./iphone_se.html">Khám phá tất cả iPhone SE</a>
+                        <a href="./iphone13.html">Khám phá tất cả iPhone 13</a>
+                        <a href="./iphone14.html">Khám phá tất cả iPhone 14</a>
+                        <a href="./iphone15.html">Khám phá tất cả iPhone 15</a>
+                        <a href="./iphone15_pro.html">Khám phá tất cả iPhone 15 Pro</a>
+                    </div>
+                    <div class="box">
+                      <span class="label">Mua iPhone</span>
+                      <a href="./buy.html" onclick="selectedType('iphone')" >Mua iPhone</a>
+                  </div>
+                </div>
+              </div>
+              <a href="./cart.html" class="navigation__logo cart hidden"><svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m13.4575 16.9268h-1.1353a3.8394 3.8394 0 0 0 -7.6444 0h-1.1353a2.6032 2.6032 0 0 0 -2.6 2.6v8.9232a2.6032 2.6032 0 0 0 2.6 2.6h9.915a2.6032 2.6032 0 0 0 2.6-2.6v-8.9231a2.6032 2.6032 0 0 0 -2.6-2.6001zm-4.9575-2.2768a2.658 2.658 0 0 1 2.6221 2.2764h-5.2442a2.658 2.658 0 0 1 2.6221-2.2764zm6.3574 13.8a1.4014 1.4014 0 0 1 -1.4 1.4h-9.9149a1.4014 1.4014 0 0 1 -1.4-1.4v-8.9231a1.4014 1.4014 0 0 1 1.4-1.4h9.915a1.4014 1.4014 0 0 1 1.4 1.4z"></path></svg></a>
+              <div class="authentication">
+      
+              </div>
+      
+            </nav>
+      </nav>
+          </header>
+
+            <nav id="menunav">
+                <div class="menu2">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <a href="macBook_air.html">
+                                <img src="./image/macbookAir.svg" alt="macAir" class="menunav-icon">
+                                <span class="menunav-label">MacBook Air</span>
+                                <span class="menunav-new">Mới</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macBook_pro.html">
+                                <img src="./image/macbookPro.svg" alt="macbookPro" class="menunav-icon">
+                                <span class="menunav-label">MacBook Pro</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="imac.html">
+                                <img src="./image/imac.svg" alt="iMac" class="menunav-icon">
+                                <span class="menunav-label">iMac</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macMini.html">
+                                <img src="./image/macMini.svg" alt="macMini" class="menunav-icon" height="80px" width="50px">
+                                <span class="menunav-label">Mac mini</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macStudio.html">
+                                <img src="./image/macStudio.svg" alt="macStudio" class="menunav-icon" height="80px" width="50px">
+                                <span class="menunav-label">Mac Studio</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="macPro.html">
+                                <img src="./image/macPro.svg" alt="macPro" class="menunav-icon" height="100px" width="50px">
+                                <span class="menunav-label">Mac Pro</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subsection subsection-3">
+                <div class="section">
+                    <div class="section-2  section-3">
+                        <video class="videoElement videoElement-1" muted>
+                            <source src="./image/large_2x.mp4" type="video/mp4">
+                        </video>
+                        <button id="replayButton" style="display: none;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subsection">
+            <div class="section">
+                <div class="welcome">
+                    <h2 class="headline-elevated">
+                        Đầy sức mạnh.
+                    </h2>
+                </div>
+                <div class="hero-copy">
+                    <p class="typo-hero-copy">
+                        <span class="hero-copy-element">
+                            Máy tính tất cả trong một cực đỉnh,
+                            <em>nay siêu mạnh mẽ với chip M3.</em>
+                            Với màn hình 24 inch tuyệt đẹp và rộng rãi cho mọi thứ bạn cần, đồng thời là một biểu tượng của thiết kế nổi bật trong bất kỳ không gian nào, iMac là lựa chọn hoàn hảo cho cả công việc và giải trí.
+                        </span>
+                    </p>
+                    <div class="dynamic-content-upgrade">
+                        Từ 36.999.000đ hoặc 1.506.000đ/tháng trong 24 tháng
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subsection">
+            <div class="section">
+                <div class="hero-copy">
+                    <h1 class="hero-headline">
+                        Bảy mày rực rỡ.
+                    </h1>
+                    <h1 class="hero-headline">
+                        Bạn hãy chọn
+                        <span class="flip-type">màu.</span>
+                    </h1>
+                </div>
+                <div class="section-2">
+                    <video class="videoElement" muted>
+                        <source src="./image/large-4.mp4" type="video/mp4">
+                    </video>
+                    <button id="replayButton" style="display: none;"></button>
+                </div>
+            </div>  
+        </div>
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline-2">
+                        <br><br>
+                        <span class="type-1">Toàn cảnh hoành tráng.</span>
+                        <br>
+                        Chi tiết sắc nét.
+                    </h2>
+                </div>
+            </div>
+            <div class="subsection-content">
+                <div class="title-copy">
+                    <div class="tile-content img-container">
+                        <picture id="anim-new-mac">
+                            <img id="img05" src="./image/rentina.png" alt="newMac">   
+                        </picture>
+                    </div>
+                </div>
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            Với màn hình Retina 24 inch diện tích lớn, iMac đem đến một khung hình tuyệt vời dành cho đa nhiệm, phim và game nhập vai sống động, và hơn thế nữa. Độ phân giải 4,5K của màn hình thể hiện chi tiết siêu nét và rực rỡ với
+                            <span class="type-1">độ sáng 500 nit.</span>
+                            Dải màu rộng P3 khiến mọi thứ bạn xem trở nên sống động như thật với 
+                            <span class="type-1">hơn một tỷ sắc màu. </span>
+                            Bất kể bạn làm gì, đều sẽ trông thật tuyệt trên iMac.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline-2">
+                        <br><br>
+                        Camera, micro và loa
+                        <br>
+                        chất lượng đỉnh cao.
+                        <br>
+                        Bạn sẽ thật sự ấn tượng.
+                    </h2>
+                </div>
+                <div class="article-header">
+                    <h2 class="article-headline-3">
+                        <br><br>
+                        <span class="type-2">Camera FaceTime HD 1080p.</span>
+                        <br>
+                        Cận cảnh tuyệt đẹp.
+                    </h2>
+                </div>
+            </div>
+            <div class="subsection-content">
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            Đây là hệ thống camera tốt nhất từng có trên iMac. Với bộ xử lý tín hiệu hình ảnh tích hợp, M3 nâng cao đáng kể chất lượng hình ảnh bằng cách phân tích và cải thiện từng điểm ảnh với hơn một nghìn tỷ phép tính mỗi giây. Điều này tạo ra khả năng giảm nhiễu vượt trội, dải tần nhạy sáng tuyệt vời cùng độ phơi sáng hình ảnh cân bằng hơn — nhờ đó mà bạn luôn trông đẹp nhất trong mọi điều kiện ánh sáng. M3 cũng kết hợp cùng với macOS để giúp bạn luôn trở thành tiêu điểm với Lớp Phủ Người Thuyết Trình, làm bạn nổi bật bằng cách đưa bạn lên trên cùng của phần nội dung bạn đang chia sẻ trong cuộc gọi video.
+                        </p>
+                    </div>
+                    <div class="title-copy">
+                        <div class="tile-content img-container">
+                            <picture id="anim-new-mac">
+                                <img id="img05" src="./image/rentina-1.png" alt="newMac">   
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline-3">
+                        <br><br>
+                        <span class="type-1">Micro chất lượng phòng thu.</span>
+                        <br>
+                        Cho những cuộc chuyện trò
+                        <br>
+                        chất lượng cao.
+                    </h2>
+                </div>
+            </div>
+            <div class="subsection-content">
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            Bất kể bạn đang gọi video, ghi âm podcast hay livestream, micrô trên iMac giúp giọng nói của bạn luôn sắc nét và trong trẻo. Bộ ba micrô chất lượng phòng thu được thiết kế để giảm tiếng vọng, công nghệ điều hướng chùm sóng giúp giảm đáng kể tiếng ồn trong nền — vì vậy mọi người đều nghe thấy lời của bạn, thay vì những gì đang diễn ra xung quanh.
+                        </p>
+                    </div>
+                    <div class="title-copy">
+                        <div class="tile-content img-container">
+                            <picture id="anim-new-mac">
+                                <img id="img05" src="./image/rentina-2.png" alt="newMac">   
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline-3">
+                        <br><br>
+                        <span class="type-12">Hệ thống âm thanh sáu loa.</span>
+                        <br>
+                        Cho không gian ngập tràn âm thanh.
+                    </h2>
+                </div>
+            </div>
+            <div class="subsection subsection-3">
+                <div class="section">
+                    <div class="section-2">
+                        <video class="videoElement" muted>
+                            <source src="./image/large-5.mp4" type="video/mp4">
+                        </video>
+                        <button id="replayButton" style="display: none;"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection-content">
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            <span class="type-3">iMac mang lại chất lượng âm thanh tuyệt vời, ngập tràn mọi không gian. Hai cặp loa trầm khử lực tạo ra âm trầm sâu, đầy đặn — và mỗi cặp đều được cân bằng với loa treble hiệu năng cao mang lại trường âm lớn, giúp đưa âm nhạc, phim ảnh và nhiều thứ khác lên một tầm cao mới. iMac cũng hỗ trợ Âm Thanh Không Gian với Dolby Atmos. Và khi kết hợp cùng với một màn hình Retina 4,5K, bạn sẽ có cảm giác như mang cả rạp phim về nhà.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline-3">
+                        <br><br>
+                        <span class="type-4">M3 và macOS.</span>
+                        <br>
+                        Xử lý đẹp mọi tác vụ.
+                    </h2>
+                </div>
+            </div>
+            <div class="subsection-content">
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            M3 và macOS đem tới cho iMac những công nghệ mới và 
+                            <span class="type-4">tân tiến nhất, mang lại hiệu năng, hiệu quả và bảo mật vượt trội.</span>
+                            Được chế tạo bằng quy trình thế hệ mới, M3 cho phép bạn lướt nhanh qua hàng trăm tab trình duyệt, thiết kế một bài thuyết trình đa phương tiện phong phú hấp dẫn, thậm chí khám phá những thế giới mới với 
+                            <span class="type-4">đồ họa đẹp sững sờ.</span>
+                            Và iMac vẫn mát mẻ và hoạt động êm ái ngay cả khi đang xử lý các khối lượng công việc khủng. Đó là sức mạnh của phần cứng, phần mềm và silicon — tất cả được thiết kế cùng nhau.
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-1">
+                    <div class="hero-copy-1">
+                        <ul class="section-cpu">
+                            <li>
+                                <p class="typo-hero-copy">
+                                    <span class="hero-copy-element">
+                                        Nhanh hơn imac sử đụng M1 đến
+                                    </span>
+                                </p>
+                                <br>
+                                <h1 class="hero-headline">
+                                    <span class="type-4">2x</span>
+                                </h1>
+                            </li>
+                            <li>
+                                <p class="typo-hero-copy">
+                                    <span class="hero-copy-element">
+                                        Nhanh hơn phiên bản iMac 27 inch sử dụng chip Intel phổ biến nhất đến
+                                    </span>
+                                </p>
+                                <br>
+                                <h1 class="hero-headline">
+                                    <span class="type-4">2,5x</span>
+                                </h1>
+                            </li>
+                            <li>
+                                <p class="typo-hero-copy">
+                                    <span class="hero-copy-element">
+                                        Nhanh hơn phiên bản iMac 21,5 inch sử dụng chip Intel mạnh nhất đến
+                                    </span>
+                                </p>
+                                <br>
+                                <h1 class="hero-headline">
+                                    <span class="type-4">4x</span>
+                                </h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            Trình duyệt nhanh nhất thế giới,
+                            <span class="type-4">Safari chạy nhanh hơn đến 30 phần trăm.</span>
+                            Tạo hồ sơ được cá nhân hóa, chia sẻ mật khẩu và mã khóa của bạn một cách an toàn.
+                        </p>
+                    </div>
+                    <div class="article-copy">
+                        <p>
+                            M3 khiến chơi game trở nên tuyệt vời hơn bao giờ hết với
+                            <span class="type-4">tốc độ khung hình nhanh hơn đến 50 phần trăm</span>
+                            và công nghệ dò tia tốc độ cao bằng phần cứng giúp ánh sáng và phản chiếu giống thật hơn.
+                        </p>
+                    </div>
+                    <div class="article-copy">
+                        <p>
+                            Chỉnh sửa nhanh hơn
+                            <span class="type-4">đến hai lần trong Adobe Photoshop.</span>
+                            Và xử lý những bức ảnh có dung lượng khủng lên đến 100 megapixel mà không gặp bất kỳ trở ngại nào.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline-2">
+                        <br><br>
+                        <span class="type-2">iMac + iPhone</span>
+                        <br>
+                        Một cặp trời sinh.
+                    </h2>
+                </div>
+            </div>
+            <div class="subsection-content">
+                <div class=section-content>
+                    <div class="article-copy">
+                        <p>
+                            <span class="type-2">iMac</span>
+                            mang mọi thứ bạn yêu thích từ
+                            <span class="type-2">iPhone</span> 
+                            lên màn hình 24 inch tuyệt đẹp.
+                            <span class="type-2">iPhone</span>
+                            cho phép bạn truy cập mọi thứ bạn cần từ
+                            <span class="type-2">iMac</span>
+                            khi bạn đang di chuyển. Và khi bạn sử dụng hai thiết bị cùng nhau, chúng kết hợp thật kỳ diệu.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card-modal-title">
+                    <div class="article-header">
+                        <h2 class="article-headline-3">
+                            <br><br>
+                            <span class="type-2">Cuộc gọi và tin nhắn</span>
+                            <br>
+                            chạy thẳng vào iMac, vì thế bạn
+                            <br>
+                            không cần đổi thiết bị khi đang bận.
+                        </h2>
+                    </div>
+                    <img id="img01" src="./image/continuity_calls_texts__cls513iufw76_large.png" alt="newMac">   
+                </div>
+                <div class="feature-card-modal-title">
+                    <div class="article-header">
+                        <h2 class="article-headline-3">
+                            <br><br>
+                            <span class="type-2">Bảng nhớ tam chung</span>
+                            <br>
+                            cho phép bạn sao chép văn bản,
+                            <br>
+                            hình ảnh và nhiều thứ
+                            <br>
+                            khác từ iPhone rồi
+                            <br>
+                            dán vào iMac của bạn.
+                        </h2>
+                    </div>
+                    <img id="img02" src="./image/continuity_clipboard__fjxbmap57maa_large.png" alt="newMac">   
+                </div>
+                <div class="feature-card-modal-title">
+                    <div class="article-header">
+                        <h2 class="article-headline-3">
+                            <br><br>
+                            <span class="type-2">Cuộc gọi và tin nhắn</span>
+                            <br>
+                            chạy thẳng vào iMac, vì thế bạn
+                            <br>
+                            không cần đổi thiết bị khi đang bận.
+                        </h2>
+                    </div>
+                    <img id="img01" src="./image/continuity_scan__gm5al4vmgy2q_large.png" alt="newMac">   
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-content">
+                <div class="article-header">
+                    <h2 class="article-headline">
+                        Mới dùng Mac?
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div id="switch-gallery">
+            <div class="scroll-container scroll-copy">
+                <ul class="item-container item-container-copy">
+                    <li id="gallery-item-1" class="gallery-item">
+                        <div class="gallery-item-content">
+                            <div class="gallery-item-image">
+                                <img id="myImg" src="./image/switchers_mac_iphone__baxmq653kvdu_large.jpg" alt="">
+                            </div>
+                            <div class="gallery-item-copy">
+                                <p>
+                                    <span class="type-4">Quen thuộc như iPhone.</span>
+                                    Học sử dụng iMac cũng dễ như iPhone. Bất kể đang chuyển tập tin bằng AirDrop hay sắp xếp các kỷ niệm trong ứng dụng Ảnh — mọi thứ tuyệt vời hơn khi sử dụng iMac cùng iPhone.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="gallery-item-1" class="gallery-item">
+                        <div class="gallery-item-content">
+                            <div class="gallery-item-image">
+                                <img id="myImg" src="./image/new_icloud.jpg" alt="">
+                            </div>
+                            <div class="gallery-item-copy">
+                                <p>
+                                    <span class="type-4">Truy cập các tập tin của bạn từ mọi nơi với iCloud.</span>
+                                    Với iCloud, bạn có thể lưu tất cả ảnh, danh bạ và tài liệu của mình để truy cập trên mọi thiết bị bạn dùng. Khởi tạo danh sách việc cần làm trên iPhone rồi hoàn thành trên iMac — cùng nhiều tác vụ khác nữa.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="gallery-item-1" class="gallery-item">
+                        <div class="gallery-item-content">
+                            <div class="gallery-item-image">
+                                <img id="myImg" src="./image/new_migration.jpg" alt="">
+                            </div>
+                            <div class="gallery-item-copy">
+                                <p>
+                                    <span class="type-4">Chuyển đổi với Trợ Lý Di Chuyển.</span>
+                                    Dễ dàng di chuyển tập tin, ứng dụng và nhiều dữ liệu khác từ máy tính PC hoặc Mac cũ. Và nếu bạn cần trợ giúp, Bộ Phận Hỗ Trợ Của Apple luôn sẵn sàng trợ giúp qua trò chuyện trực tuyến hoặc cuộc gọi điện thoại..
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="gallery-item-1" class="gallery-item">
+                        <div class="gallery-item-content">
+                            <div class="gallery-item-image">
+                                <img id="myImg" src="./image/switchers_powerful_apps__bmvtiwjdd7si_large.jpg" alt="">
+                            </div>
+                            <div class="gallery-item-copy">
+                                <p>
+                                    <span class="type-4">Các ứng dụng mạnh mẽ được tích hợp sẵn.</span>
+                                    iMac được cài sẵn các ứng dụng như FaceTime, Safari, Ảnh và Keynote, giúp bạn sáng tạo và cộng tác trong ý tưởng lớn sắp tới.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="gallery-item-1" class="gallery-item">
+                        <div class="gallery-item-content">
+                            <div class="gallery-item-image">
+                                <img id="myImg" src="./image/new_mac_super.png" alt="">
+                            </div>
+                            <div class="gallery-item-copy">
+                                <p>
+                                    <span class="type-4">Đúng, Mac làm được đó</span>
+                                    Không chỉ là iMac. Mọi máy Mac đều có thiết kế dễ sử dụng, mạnh mẽ và ấn tượng.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="end1">
+              <div class=" box box1">
+                <div class="part part1">
+                  <span class="label">Mua Sắm Và Tìm Hiểu</span>
+                  <ul>
+                    <li>
+                      <a href="#">Cửa Hàng</a>
+                    </li>
+                    <li>
+                      <a href="#">Mac</a>
+                    </li>
+                    <li>
+                      <a href="#">iPad</a>
+                    </li>
+                    <li>
+                      <a href="#">iPhone</a>
+                    </li>
+                    <li>
+                      <a href="#">Watch</a>
+                    </li>
+                    <li>
+                      <a href="#">AirPods</a>
+                    </li>
+                    <li>
+                      <a href="#">TV & Nhà</a>
+                    </li>
+                    <li>
+                      <a href="#">AirTag</a>
+                    </li>
+                    <li>
+                      <a href="#">Phụ Kiện</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Ví Apple</span>
+                  <ul>
+                    <li>
+                      <a href="#">Ví</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Pay</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box box2">
+                <div class="part part1">
+                  <span class="label">Tài Khoản</span>
+                  <ul>
+                    <li>
+                      <a href="#">Quản Lý ID Apple Của Bạn</a>
+                    </li>
+                    <li>
+                      <a href="#">Tài Khoản Apple Store</a>
+                    </li>
+                    <li>
+                      <a href="#">iCloud.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Giải Trí</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple One</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple TV+</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Music</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Arcade</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Podcasts</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Books</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box box3">
+                <div class="part part1">
+                  <span class="label">Apple Store</span>
+                  <ul>
+                    <li>
+                      <a href="#">Ứng Dụng Apple Store</a>
+                    </li>
+                    <li>
+                      <a href="#">Apple Trade In</a>
+                    </li>
+                    <li>
+                      <a href="#">Tài Chính</a>
+                    </li>
+                    <li>
+                      <a href="#">Tình Trạng Đơn Hàng</a>
+                    </li>
+                    <li>
+                      <a href="#">Hỗ Trợ Mua Hàng</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box box4">
+                <div class="part part1">
+                  <span class="label">Dành Cho Doanh Nghiệp</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple Và Doanh Nghiệp</a>
+                    </li>
+                    <li>
+                      <a href="#">Mua Hàng Cho Doanh Nghiệp</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Cho Giáo Dục</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple Và Giáo Dục</a>
+                    </li>
+                    <li>
+                      <a href="#">Mua Hàng Cho Bậc Đại Học</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part3">
+                  <span class="label">Cho Chăm Sóc Sức Khỏe</span>
+                  <ul>
+                    <li>
+                      <a href="#">Apple Trong Chăm Sóc Sức Khỏe</a>
+                    </li>
+                    <li>
+                      <a href="#">Sức Khỏe Trên Apple Watch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" box box5">
+                <div class="part part1">
+                  <span class="label">Giá Trị Cốt Lõi Của Apple</span>
+                  <ul>
+                    <li>
+                      <a href="#">Trợ Năng</a>
+                    </li>
+                    <li>
+                      <a href="#">Môi Trường</a>
+                    </li>
+                    <li>
+                      <a href="#">Quyền Riêng Tư</a>
+                    </li>
+                    <li>
+                      <a href="#">Chuỗi Cung Ứng</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part part2">
+                  <span class="label">Về Apple</span>
+                  <ul>
+                    <li>
+                      <a href="#">Newsroom</a>
+                    </li>
+                    <li>
+                      <a href="#">Lãnh Đạo Của Apple</a>
+                    </li>
+                    <li>
+                      <a href="#">Nhà Đầu Tư</a>
+                    </li>
+                    <li>
+                      <a href="#">Đạo Đức & Quy Tắc</a>
+                    </li>
+                    <li>
+                      <a href="#">Sự Kiện</a>
+                    </li>
+                    <li>
+                      <a href="#">Liên Hệ Apple</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <p class="end2">Xem thêm cách để mua hàng: <a href="#">Tìm cửa hàng bán lẻ</a> gần bạn. Hoặc gọi 1800 1192.</p>
+    
+            <div class="end3">
+              <div>
+                <p>Bản quyền © Apple Inc. 2024 Bảo lưu mọi quyền.</p>
+                <a href="#">Việt Nam</a>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Chính Sách Quyền Riêng Tư</a>
+                </li>
+                <li>
+                  <a href="#">Điều Khoản Sử Dụng</a>
+                </li>
+                <li>
+                  <a href="#">Pháp Lý</a>
+                </li>
+                <li>
+                  <a href="#">Bán Hàng Và Hoàn Tiền</a>
+                </li>
+                <li>
+                  <a href="#">Bản Đồ Trang Web</a>
+                </li>
+              </ul>
+            </div>
+        </footer>
+        <div class="gototop">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+          <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+          <script src="./global.js"></script>
+        <script src="./all.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
